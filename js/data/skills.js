@@ -1,101 +1,111 @@
-// Waldur Quest - Skills Data
-// Adapted from Waldur Way skill system
+// ATI Quest - Academic Skills Data
+// For University of Tartu Institute of Computer Science
 
 const skillTiers = [
-    { id: 'literacy', name: 'Universal Literacy', icon: '📚', color: '#6366f1', description: 'Minimum viable competence for any team member', order: 0 },
-    { id: 'product', name: 'Product Knowledge', icon: '🎓', color: '#0ea5e9', description: 'Understanding Waldur and its verticals', order: 1 },
-    { id: 'foundation', name: 'Technical Foundation', icon: '🧱', color: '#3b82f6', description: 'Technical skills for developers', order: 2 },
-    { id: 'core', name: 'Core Platform', icon: '⚙️', color: '#8b5cf6', description: 'Waldur codebase expertise', order: 3 },
+    { id: 'literacy', name: 'Research Fundamentals', icon: '📚', color: '#6366f1', description: 'Universal academic competencies', order: 0 },
+    { id: 'product', name: 'UT & Ecosystem', icon: '🏛️', color: '#0ea5e9', description: 'Understanding your environment', order: 1 },
+    { id: 'foundation', name: 'Core Competencies', icon: '🧱', color: '#3b82f6', description: 'Professional academic skills', order: 2 },
+    { id: 'core', name: 'Advanced Execution', icon: '⚙️', color: '#8b5cf6', description: 'Expert-level project and collaboration skills', order: 3 },
     { id: 'specialization', name: 'Specialization', icon: '🎯', color: '#f59e0b', description: 'Deep expertise areas', order: 4 }
 ];
 
 const skillPackages = [
-    { id: 'cloud-integrations', name: 'Cloud Integrations', icon: '☁️', color: '#3b82f6' },
-    { id: 'hpc-research', name: 'HPC & Research', icon: '🔬', color: '#8b5cf6' },
-    { id: 'platform-ops', name: 'Platform Operations', icon: '🚀', color: '#06b6d4' },
-    { id: 'identity-security', name: 'Identity & Security', icon: '🔐', color: '#ef4444' },
-    { id: 'user-experience', name: 'User Experience', icon: '🎨', color: '#ec4899' }
+    { id: 'grant-writing', name: 'Grant Writing', icon: '📝', color: '#3b82f6' },
+    { id: 'project-management', name: 'Project Management', icon: '📊', color: '#8b5cf6' },
+    { id: 'industry-collaboration', name: 'Industry Collaboration', icon: '🤝', color: '#06b6d4' },
+    { id: 'funding-instruments', name: 'Funding Instruments', icon: '💰', color: '#f59e0b' },
+    { id: 'research-domains', name: 'Research Domains', icon: '🔬', color: '#ef4444' }
 ];
 
 const skills = [
-    // LITERACY TIER (11 skills)
-    { id: 'l-cli', name: 'Command Line Basics', tier: 'literacy', description: 'Navigate filesystem, run scripts, read logs' },
-    { id: 'l-git-basics', name: 'Git Essentials', tier: 'literacy', description: 'Clone, commit, push, create branches, PRs' },
-    { id: 'l-containers-101', name: 'Container Concepts', tier: 'literacy', description: 'Immutability, logs, restart policies' },
-    { id: 'l-k8s-concepts', name: 'Kubernetes Overview', tier: 'literacy', description: 'Pods vs deployments, architecture basics' },
-    { id: 'l-waldur-local', name: 'Waldur Local Setup', tier: 'literacy', description: 'Run Waldur with docker-compose' },
-    { id: 'l-workflow', name: 'Development Workflow', tier: 'literacy', description: 'Feature branches, Jira, code review' },
-    { id: 'l-browser-apps', name: 'Web App Concepts', tier: 'literacy', description: 'APIs, SPA architecture, dev tools' },
-    { id: 'l-iac-concepts', name: 'IaC Concepts', tier: 'literacy', description: 'Ansible/Terraform, declarative vs imperative' },
-    { id: 'l-python', name: 'Python Basics', tier: 'literacy', description: 'Basic syntax, scripting, standard library' },
-    { id: 'l-django', name: 'Django Basics', tier: 'literacy', description: 'Project structure, ORM, views' },
-    { id: 'l-react', name: 'React Basics', tier: 'literacy', description: 'Components, JSX, hooks, props' },
+    // ============================================================================
+    // TIER 1: LITERACY - Research Fundamentals (10 skills)
+    // ============================================================================
+    { id: 'l-academic-writing', name: 'Academic Writing', tier: 'literacy', description: 'Structure, clarity, and style for papers and proposals' },
+    { id: 'l-presentation', name: 'Presentation Skills', tier: 'literacy', description: 'Talks, posters, and conference presentations' },
+    { id: 'l-research-ethics', name: 'Research Ethics', tier: 'literacy', description: 'Integrity, data management, reproducibility' },
+    { id: 'l-peer-review', name: 'Peer Review', tier: 'literacy', description: 'Reviewing papers and evaluating research quality' },
+    { id: 'l-literature-review', name: 'Literature Review', tier: 'literacy', description: 'Systematic search and synthesis of prior work' },
+    { id: 'l-data-management', name: 'Research Data Management', tier: 'literacy', description: 'FAIR principles, data plans, archiving' },
+    { id: 'l-open-science', name: 'Open Science', tier: 'literacy', description: 'Open access, preprints, reproducibility' },
+    { id: 'l-networking', name: 'Academic Networking', tier: 'literacy', description: 'Building collaborations, conferences, visibility' },
+    { id: 'l-time-management', name: 'Time Management', tier: 'literacy', description: 'Balancing research, teaching, admin, grants' },
+    { id: 'l-mentoring', name: 'Mentoring', tier: 'literacy', description: 'Supervising students, postdocs, early-career support' },
 
-    // PRODUCT TIER (6 skills)
-    { id: 'p-waldur-basics', name: 'Waldur Overview', tier: 'product', description: 'Core concepts, multi-tenancy, marketplace' },
-    { id: 'p-vertical-hpc', name: 'HPC/AI Vertical', tier: 'product', description: 'Slurm integration, allocations' },
-    { id: 'p-vertical-gov', name: 'Government Vertical', tier: 'product', description: 'Compliance, audit workflows' },
-    { id: 'p-vertical-fed', name: 'Federated Vertical', tier: 'product', description: 'Multi-org, consortiums, federation' },
-    { id: 'p-use-cases', name: 'Customer Use Cases', tier: 'product', description: 'Real customer deployments' },
-    { id: 'p-deployment-options', name: 'Deployment Patterns', tier: 'product', description: 'Cloud vs on-prem, air-gapped' },
+    // ============================================================================
+    // TIER 2: PRODUCT - UT & Ecosystem Knowledge (6 skills)
+    // ============================================================================
+    { id: 'p-ut-structure', name: 'UT Structure', tier: 'product', description: 'University governance, ICS organization, Delta ecosystem' },
+    { id: 'p-estonian-funding', name: 'Estonian Funding', tier: 'product', description: 'ETAG grants, national programs, ETIS system' },
+    { id: 'p-eu-funding', name: 'EU Funding Landscape', tier: 'product', description: 'Horizon Europe, ERC, MSCA, structural funds' },
+    { id: 'p-industry-landscape', name: 'Industry Landscape', tier: 'product', description: 'Estonian tech ecosystem, Delta partners, startups' },
+    { id: 'p-ip-basics', name: 'IP & Commercialization', tier: 'product', description: 'Patents, licensing, spin-offs, tech transfer' },
+    { id: 'p-compliance', name: 'Research Compliance', tier: 'product', description: 'Ethics committees, GDPR, reporting requirements' },
 
-    // FOUNDATION TIER - CS Fundamentals (10 skills)
-    { id: 'f-data-structures', name: 'Data Structures', tier: 'foundation', category: 'cs', description: 'Trees, queues, graphs, hash tables' },
-    { id: 'f-algorithms', name: 'Algorithms', tier: 'foundation', category: 'cs', description: 'Filtering, pagination, tree traversal' },
-    { id: 'f-state-machines', name: 'State Machines', tier: 'foundation', category: 'cs', description: 'FSM concepts, django-fsm' },
-    { id: 'f-design-patterns', name: 'Design Patterns', tier: 'foundation', category: 'cs', description: 'Mixin, Factory, Strategy, Observer' },
-    { id: 'f-concurrency', name: 'Concurrency', tier: 'foundation', category: 'cs', description: 'Async patterns, race conditions' },
-    { id: 'f-immutability', name: 'Immutability & FP', tier: 'foundation', category: 'cs', description: 'Immutable data, pure functions' },
-    { id: 'f-type-systems', name: 'Type Systems', tier: 'foundation', category: 'cs', description: 'TypeScript, Python type hints' },
-    { id: 'f-memory-perf', name: 'Memory & Performance', tier: 'foundation', category: 'cs', description: 'Memoization, lazy loading' },
-    { id: 'f-api-principles', name: 'API Design Principles', tier: 'foundation', category: 'cs', description: 'REST semantics, HTTP methods' },
-    { id: 'f-security-basics', name: 'Security Fundamentals', tier: 'foundation', category: 'cs', description: 'Auth concepts, OWASP basics' },
+    // ============================================================================
+    // TIER 3: FOUNDATION - Core Competencies (18 skills)
+    // ============================================================================
 
-    // FOUNDATION TIER - Software Engineering (14 skills)
-    { id: 'f-testing', name: 'Testing Fundamentals', tier: 'foundation', category: 'se', description: 'pytest, Vitest, RTL' },
-    { id: 'f-debugging', name: 'Debugging & Profiling', tier: 'foundation', category: 'se', description: 'pdb, browser DevTools' },
-    { id: 'f-git', name: 'Git Workflow', tier: 'foundation', category: 'se', description: 'Branching, rebasing, PRs' },
-    { id: 'f-code-review', name: 'Code Review', tier: 'foundation', category: 'se', description: 'Review patterns, feedback' },
-    { id: 'f-refactoring', name: 'Refactoring', tier: 'foundation', category: 'se', description: 'Safe refactoring, code smells' },
-    { id: 'f-documentation', name: 'Technical Documentation', tier: 'foundation', category: 'se', description: 'API docs, architecture diagrams' },
-    { id: 'f-build-systems', name: 'Build Systems', tier: 'foundation', category: 'se', description: 'Vite, pip, uv, bundling' },
-    { id: 'f-ci-cd', name: 'CI/CD Pipelines', tier: 'foundation', category: 'se', description: 'GitHub Actions, GitLab CI' },
-    { id: 'f-docker', name: 'Containers & Docker', tier: 'foundation', category: 'se', description: 'Dockerfile, docker-compose' },
-    { id: 'f-linux', name: 'Linux Administration', tier: 'foundation', category: 'se', description: 'Shell, systemd, networking' },
-    { id: 'f-sql', name: 'SQL & Databases', tier: 'foundation', category: 'se', description: 'Queries, indexes, transactions' },
-    { id: 'f-ai-prompting', name: 'AI Prompting', tier: 'foundation', category: 'se', description: 'Prompt engineering, context management' },
-    { id: 'f-ai-coding', name: 'AI-Assisted Coding', tier: 'foundation', category: 'se', description: 'Copilot, Cursor, Claude Code' },
-    { id: 'f-ai-agents', name: 'AI Agent Setup', tier: 'foundation', category: 'se', description: 'MCP servers, agentic workflows' },
+    // Category: Grant Writing (6 skills)
+    { id: 'f-proposal-structure', name: 'Proposal Structure', tier: 'foundation', category: 'grant-writing', description: 'Excellence, Impact, Implementation sections' },
+    { id: 'f-budget-planning', name: 'Budget Planning', tier: 'foundation', category: 'grant-writing', description: 'Cost categories, eligible expenses, justification' },
+    { id: 'f-impact-pathways', name: 'Impact Pathways', tier: 'foundation', category: 'grant-writing', description: 'Dissemination, exploitation, sustainability' },
+    { id: 'f-consortium-building', name: 'Consortium Building', tier: 'foundation', category: 'grant-writing', description: 'Partner selection, roles, agreements' },
+    { id: 'f-evaluation-criteria', name: 'Evaluation Criteria', tier: 'foundation', category: 'grant-writing', description: 'Understanding reviewer expectations' },
+    { id: 'f-resubmission', name: 'Resubmission Strategy', tier: 'foundation', category: 'grant-writing', description: 'Learning from feedback, improving proposals' },
 
-    // CORE PLATFORM TIER (15 skills)
-    { id: 'c-waldur-arch', name: 'Waldur Architecture', tier: 'core', description: 'Plugin system, structure apps' },
-    { id: 'c-marketplace', name: 'Marketplace System', tier: 'core', description: 'Offerings, resources, orders' },
-    { id: 'c-permissions', name: 'Permission/RBAC', tier: 'core', description: 'Roles, permissions, scopes' },
-    { id: 'c-billing', name: 'Billing & Invoicing', tier: 'core', description: 'Pricing, invoices, payments' },
-    { id: 'c-quotas', name: 'Quota Management', tier: 'core', description: 'Resource limits, enforcement' },
-    { id: 'c-notifications', name: 'Notifications System', tier: 'core', description: 'Events, webhooks, email' },
-    { id: 'c-celery', name: 'Celery/Task Queue', tier: 'core', description: 'Async tasks, scheduling' },
-    { id: 'c-api-design', name: 'API v3 Design', tier: 'core', description: 'Versioning, migration' },
-    { id: 'c-multi-tenant', name: 'Multi-tenancy', tier: 'core', description: 'Org hierarchy, isolation' },
-    { id: 'c-reporting', name: 'Reporting & Analytics', tier: 'core', description: 'Usage reports, dashboards' },
-    { id: 'c-waldur-ui', name: 'Waldur UI Framework', tier: 'core', description: 'Component library, Redux' },
-    { id: 'c-waldur-forms', name: 'Form System', tier: 'core', description: 'redux-form, validation' },
-    { id: 'c-waldur-tables', name: 'Data Tables', tier: 'core', description: 'Pagination, filtering, export' },
-    { id: 'c-waldur-modals', name: 'Modal & Dialog System', tier: 'core', description: 'Modal patterns, wizards' },
-    { id: 'c-site-agent', name: 'Site Agent Framework', tier: 'core', description: 'Agent protocol, plugins' },
+    // Category: Project Management (6 skills)
+    { id: 'f-project-planning', name: 'Project Planning', tier: 'foundation', category: 'project-management', description: 'Work packages, milestones, deliverables' },
+    { id: 'f-team-leadership', name: 'Team Leadership', tier: 'foundation', category: 'project-management', description: 'Managing researchers, delegation, motivation' },
+    { id: 'f-financial-management', name: 'Financial Management', tier: 'foundation', category: 'project-management', description: 'Budget tracking, reporting, audits' },
+    { id: 'f-risk-management', name: 'Risk Management', tier: 'foundation', category: 'project-management', description: 'Identifying and mitigating project risks' },
+    { id: 'f-stakeholder-mgmt', name: 'Stakeholder Management', tier: 'foundation', category: 'project-management', description: 'Advisory boards, project officers, partners' },
+    { id: 'f-reporting', name: 'Project Reporting', tier: 'foundation', category: 'project-management', description: 'Periodic reports, reviews, amendments' },
 
-    // SPECIALIZATION TIER (selected for quiz)
-    { id: 's-openstack', name: 'OpenStack', tier: 'specialization', package: 'cloud-integrations', description: 'Nova, Neutron, Cinder, Keystone' },
-    { id: 's-azure', name: 'Azure Integration', tier: 'specialization', package: 'cloud-integrations', description: 'ARM templates, Azure services' },
-    { id: 's-kubernetes', name: 'Kubernetes Ops', tier: 'specialization', package: 'platform-ops', description: 'K8s deployment, Helm, operators' },
-    { id: 's-ansible', name: 'Ansible Automation', tier: 'specialization', package: 'platform-ops', description: 'Playbooks, roles, AWX' },
-    { id: 's-slurm', name: 'SLURM/HPC', tier: 'specialization', package: 'hpc-research', description: 'Job scheduling, accounting' },
-    { id: 's-oidc', name: 'OIDC Protocol', tier: 'specialization', package: 'identity-security', description: 'OpenID Connect, token flows' },
-    { id: 's-monitoring', name: 'Monitoring', tier: 'specialization', package: 'platform-ops', description: 'Prometheus, Grafana, ELK' },
-    { id: 's-gitlab-cicd', name: 'GitLab CI/CD', tier: 'specialization', package: 'platform-ops', description: 'Pipelines, runners, releases' }
+    // Category: Industry Collaboration (6 skills)
+    { id: 'f-industry-needs', name: 'Understanding Industry Needs', tier: 'foundation', category: 'industry-collaboration', description: 'Translating business problems to research' },
+    { id: 'f-contract-research', name: 'Contract Research', tier: 'foundation', category: 'industry-collaboration', description: 'Negotiating and executing industry contracts' },
+    { id: 'f-tech-transfer', name: 'Technology Transfer', tier: 'foundation', category: 'industry-collaboration', description: 'From research to market, TTO collaboration' },
+    { id: 'f-startup-basics', name: 'Startup Fundamentals', tier: 'foundation', category: 'industry-collaboration', description: 'Founding spin-offs, funding, business models' },
+    { id: 'f-partnership-models', name: 'Partnership Models', tier: 'foundation', category: 'industry-collaboration', description: 'Joint labs, PhDs, research chairs' },
+    { id: 'f-communication-industry', name: 'Communicating with Industry', tier: 'foundation', category: 'industry-collaboration', description: 'Non-academic presentations, demos, pitches' },
+
+    // ============================================================================
+    // TIER 4: CORE - Advanced Execution (12 skills)
+    // ============================================================================
+    { id: 'c-large-proposals', name: 'Large Collaborative Proposals', tier: 'core', description: 'Coordinating multi-partner EU projects' },
+    { id: 'c-erc-applications', name: 'ERC Application Mastery', tier: 'core', description: 'Starting, Consolidator, Advanced grants' },
+    { id: 'c-horizon-coordination', name: 'Horizon Coordination', tier: 'core', description: 'Leading EU consortium as coordinator' },
+    { id: 'c-industry-partnerships', name: 'Strategic Industry Partnerships', tier: 'core', description: 'Long-term collaborations, sponsored chairs' },
+    { id: 'c-policy-engagement', name: 'Policy Engagement', tier: 'core', description: 'Research informing policy, stakeholder dialogues' },
+    { id: 'c-media-communication', name: 'Science Communication', tier: 'core', description: 'Media, public engagement, societal impact' },
+    { id: 'c-interdisciplinary', name: 'Interdisciplinary Research', tier: 'core', description: 'Cross-field collaboration methodologies' },
+    { id: 'c-international-networks', name: 'International Networks', tier: 'core', description: 'Leading/participating in research networks' },
+    { id: 'c-talent-development', name: 'Talent Development', tier: 'core', description: 'Building research groups, career paths' },
+    { id: 'c-infrastructure', name: 'Research Infrastructure', tier: 'core', description: 'Equipment, computing resources, facilities' },
+    { id: 'c-sustainability', name: 'Financial Sustainability', tier: 'core', description: 'Diverse funding portfolio, continuity' },
+    { id: 'c-strategic-planning', name: 'Strategic Research Planning', tier: 'core', description: 'Long-term vision, positioning, priorities' },
+
+    // ============================================================================
+    // TIER 5: SPECIALIZATION - Funding & Domain Expertise (10 skills)
+    // ============================================================================
+
+    // Package: Funding Instruments
+    { id: 's-erc-grants', name: 'ERC Grants', tier: 'specialization', package: 'funding-instruments', description: 'Starting, Consolidator, Advanced, Synergy' },
+    { id: 's-horizon-ria', name: 'Horizon RIA/IA', tier: 'specialization', package: 'funding-instruments', description: 'Research & Innovation Actions' },
+    { id: 's-msca', name: 'MSCA Fellowships', tier: 'specialization', package: 'funding-instruments', description: 'Postdoctoral and doctoral networks' },
+    { id: 's-etag-grants', name: 'ETAG National Grants', tier: 'specialization', package: 'funding-instruments', description: 'Personal, team, and mobility grants' },
+    { id: 's-industry-funding', name: 'Industry-Funded Research', tier: 'specialization', package: 'funding-instruments', description: 'Contract research, sponsored positions' },
+
+    // Package: Research Domains (UT ICS)
+    { id: 's-ai-ml', name: 'AI & Machine Learning', tier: 'specialization', package: 'research-domains', description: 'ML, deep learning, autonomous systems' },
+    { id: 's-data-science', name: 'Data Science & Bioinformatics', tier: 'specialization', package: 'research-domains', description: 'Big data, health informatics, analytics' },
+    { id: 's-security-crypto', name: 'Security & Cryptography', tier: 'specialization', package: 'research-domains', description: 'Cybersecurity, privacy, cryptographic methods' },
+    { id: 's-software-systems', name: 'Software Engineering & IS', tier: 'specialization', package: 'research-domains', description: 'SE analytics, business processes, HCI' },
+    { id: 's-distributed-systems', name: 'Distributed & Cloud Systems', tier: 'specialization', package: 'research-domains', description: 'IoT, HPC, mobile computing, edge systems' }
 ];
 
-// Skill levels with descriptions
+// Skill levels with descriptions (academic progression)
 const skillLevels = [
     { level: 0, name: 'Not Started', color: '#4b5563', xpRequired: 0 },
     { level: 1, name: 'Aware', color: '#3b82f6', xpRequired: 100 },
@@ -103,19 +113,99 @@ const skillLevels = [
     { level: 3, name: 'Proficient', color: '#eab308', xpRequired: 600 },
     { level: 4, name: 'Advanced', color: '#f97316', xpRequired: 1000 },
     { level: 5, name: 'Expert', color: '#a855f7', xpRequired: 1500 },
-    { level: 6, name: 'Master', color: '#ec4899', xpRequired: 2100 },      // Pink
-    { level: 7, name: 'Grandmaster', color: '#14b8a6', xpRequired: 2800 }  // Teal
+    { level: 6, name: 'Master', color: '#ec4899', xpRequired: 2100 },
+    { level: 7, name: 'Grandmaster', color: '#14b8a6', xpRequired: 2800 }
 ];
 
-// Weapon profiles based on skill shape
+// Academic profiles based on skill shape (replacing weapon profiles)
 const weaponProfiles = [
-    { id: 'dagger', name: 'Dagger', icon: '🗡️', description: 'Building literacy/foundation', minLiteracy: 0, minBreadth: 0, minDeep: 0 },
-    { id: 'shield', name: 'Shield', icon: '🛡️', description: 'Solid generalist', minLiteracy: 80, minBreadth: 50, minDeep: 0 },
-    { id: 'spear', name: 'Spear', icon: '⚔️', description: 'Deep but narrow', minLiteracy: 0, minBreadth: 0, minDeep: 1 },
-    { id: 'lance', name: 'Lance', icon: '🏹', description: 'Balanced T-shape', minLiteracy: 80, minBreadth: 50, minDeep: 1 },
-    { id: 'bident', name: 'Bident', icon: '⚔️', description: 'T-shape + 2 spikes', minLiteracy: 80, minBreadth: 50, minDeep: 2 },
-    { id: 'trident', name: 'Trident', icon: '🔱', description: 'Ideal senior profile', minLiteracy: 80, minBreadth: 50, minDeep: 3 }
+    { id: 'scholar', name: 'Scholar', icon: '📖', description: 'Building research literacy', minLiteracy: 0, minBreadth: 0, minDeep: 0 },
+    { id: 'researcher', name: 'Researcher', icon: '🔬', description: 'Solid generalist', minLiteracy: 80, minBreadth: 50, minDeep: 0 },
+    { id: 'specialist', name: 'Specialist', icon: '🎯', description: 'Deep but narrow', minLiteracy: 0, minBreadth: 0, minDeep: 1 },
+    { id: 'fellow', name: 'Fellow', icon: '🏅', description: 'Balanced T-shape', minLiteracy: 80, minBreadth: 50, minDeep: 1 },
+    { id: 'professor', name: 'Professor', icon: '👨‍🏫', description: 'T-shape + 2 depths', minLiteracy: 80, minBreadth: 50, minDeep: 2 },
+    { id: 'distinguished', name: 'Distinguished', icon: '🌟', description: 'Ideal senior profile', minLiteracy: 80, minBreadth: 50, minDeep: 3 }
 ];
+
+// Cross-domain collaboration bridges
+const collaborationBridges = {
+    's-ai-ml+s-security-crypto': {
+        name: 'Privacy-Preserving ML',
+        description: 'Combine AI with cryptography for secure federated learning',
+        relatedFunding: ['Horizon Europe Cluster 3', 'ERC Starting Grant'],
+        utGroups: ['Machine Learning Group', 'Cryptography Research Group']
+    },
+    's-ai-ml+s-data-science': {
+        name: 'Health AI & Bioinformatics',
+        description: 'Apply ML to biomedical and health data challenges',
+        relatedFunding: ['Horizon Europe Cluster 1', 'ETAG Health'],
+        utGroups: ['Health Informatics', 'ELIXIR Estonia']
+    },
+    's-ai-ml+s-distributed-systems': {
+        name: 'Edge AI & IoT Intelligence',
+        description: 'Deploy ML models on edge devices and distributed systems',
+        relatedFunding: ['Horizon Europe Cluster 4', 'ETAG ICT'],
+        utGroups: ['Mobile & Cloud Lab', 'AI Research Group']
+    },
+    's-security-crypto+s-distributed-systems': {
+        name: 'Secure Distributed Computing',
+        description: 'Cryptographic protocols for cloud and blockchain systems',
+        relatedFunding: ['Horizon Europe Cluster 3', 'Estonian Cyber Programme'],
+        utGroups: ['Cryptography Research Group', 'Distributed Systems Group']
+    },
+    's-data-science+s-software-systems': {
+        name: 'Data-Driven Software Engineering',
+        description: 'Mining software repositories, ML for code analysis',
+        relatedFunding: ['Horizon Europe Cluster 4', 'ETAG ICT'],
+        utGroups: ['Software Engineering Group', 'Data Science Lab']
+    },
+    's-security-crypto+s-software-systems': {
+        name: 'Secure Software Development',
+        description: 'Security by design, vulnerability detection, formal methods',
+        relatedFunding: ['Horizon Europe Cluster 3', 'National Cyber Security'],
+        utGroups: ['Software Security Lab', 'Formal Methods Group']
+    },
+    's-ai-ml+s-software-systems': {
+        name: 'AI for Software Engineering',
+        description: 'Code generation, automated testing, intelligent IDEs',
+        relatedFunding: ['Horizon Europe Cluster 4', 'ERC'],
+        utGroups: ['SE Analytics', 'AI Research Group']
+    },
+    's-data-science+s-security-crypto': {
+        name: 'Privacy-Preserving Data Analytics',
+        description: 'Secure multi-party computation, differential privacy',
+        relatedFunding: ['Horizon Europe Cluster 1', 'Health Data Programme'],
+        utGroups: ['Cybernetica', 'Health Informatics']
+    }
+};
+
+// Get collaboration opportunities for a user based on their specializations
+function getCollaborationOpportunities(skillProgress) {
+    const opportunities = [];
+    const specSkills = skills.filter(s => s.tier === 'specialization');
+
+    // Find specializations at level 2+
+    const activeSpecs = specSkills.filter(s => {
+        const progress = skillProgress[s.id];
+        return progress && progress.level >= 2;
+    }).map(s => s.id);
+
+    // Check all combinations
+    for (let i = 0; i < activeSpecs.length; i++) {
+        for (let j = i + 1; j < activeSpecs.length; j++) {
+            const key1 = `${activeSpecs[i]}+${activeSpecs[j]}`;
+            const key2 = `${activeSpecs[j]}+${activeSpecs[i]}`;
+
+            if (collaborationBridges[key1]) {
+                opportunities.push(collaborationBridges[key1]);
+            } else if (collaborationBridges[key2]) {
+                opportunities.push(collaborationBridges[key2]);
+            }
+        }
+    }
+
+    return opportunities.slice(0, 3); // Return top 3
+}
 
 // Get skills by tier
 function getSkillsByTier(tierId) {

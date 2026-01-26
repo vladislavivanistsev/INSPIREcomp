@@ -1,15 +1,16 @@
-// Waldur Quest - LocalStorage Management
+// ATI Quest - LocalStorage Management
+// For University of Tartu Institute of Computer Science
 
-const STORAGE_KEY = 'waldur-quest';
+const STORAGE_KEY = 'ati-quest';
 
 // Default player state
 const defaultState = {
     playerId: null,
-    playerName: 'Adventurer',
+    playerName: 'Researcher',
     totalXP: 0,
     skillProgress: {}, // { skillId: { level: number, xp: number, attempts: number, passed: boolean } }
     achievements: [],
-    currentProfile: 'dagger',
+    currentProfile: 'scholar',
     gamesPlayed: 0,
     questionsAnswered: 0,
     correctAnswers: 0,
@@ -156,39 +157,40 @@ function getStats() {
     };
 }
 
-// Calculate current weapon profile based on progress
+// Calculate current academic profile based on progress
 function calculateProfile() {
     const state = loadState();
     const progress = state.skillProgress;
 
-    // Count skills by tier at proficient level (3+)
-    let literacyProficient = 0;
-    let foundationProficient = 0;
-    let specializationExpert = 0; // Level 4+
+    // Count skills by tier at competent level (2+)
+    let literacyCompetent = 0;  // 10 literacy skills
+    let foundationCompetent = 0; // 18 foundation skills
+    let specializationExpert = 0; // Level 3+ (10 specialization skills)
 
-    // This is simplified - in real implementation would check actual tier
+    // Check actual tier prefixes
     Object.entries(progress).forEach(([skillId, data]) => {
-        if (skillId.startsWith('l-') && data.level >= 2) literacyProficient++;
-        if (skillId.startsWith('f-') && data.level >= 3) foundationProficient++;
-        if (skillId.startsWith('s-') && data.level >= 4) specializationExpert++;
+        if (skillId.startsWith('l-') && data.level >= 2) literacyCompetent++;
+        if (skillId.startsWith('f-') && data.level >= 2) foundationCompetent++;
+        if (skillId.startsWith('s-') && data.level >= 3) specializationExpert++;
     });
 
-    const literacyPercent = (literacyProficient / 11) * 100;
-    const foundationPercent = (foundationProficient / 24) * 100;
+    const literacyPercent = (literacyCompetent / 10) * 100;
+    const foundationPercent = (foundationCompetent / 18) * 100;
 
-    // Determine profile
-    let profile = 'dagger';
+    // Determine profile (academic progression)
+    // Scholar -> Researcher -> Specialist -> Fellow -> Professor -> Distinguished
+    let profile = 'scholar';
 
     if (literacyPercent >= 80 && foundationPercent >= 50 && specializationExpert >= 3) {
-        profile = 'trident';
+        profile = 'distinguished';
     } else if (literacyPercent >= 80 && foundationPercent >= 50 && specializationExpert >= 2) {
-        profile = 'bident';
+        profile = 'professor';
     } else if (literacyPercent >= 80 && foundationPercent >= 50 && specializationExpert >= 1) {
-        profile = 'lance';
+        profile = 'fellow';
     } else if (specializationExpert >= 1) {
-        profile = 'spear';
+        profile = 'specialist';
     } else if (literacyPercent >= 80 && foundationPercent >= 50) {
-        profile = 'shield';
+        profile = 'researcher';
     }
 
     updateProfile(profile);
