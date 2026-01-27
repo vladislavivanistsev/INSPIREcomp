@@ -5,8 +5,9 @@ A browser-based skill assessment game for Waldur developers. Test and track your
 ## Features
 
 - **5 Skill Tiers**: Literacy, Product Knowledge, Technical Foundation, Core Platform, and Specialization
-- **5 Mastery Levels**: Progress from Aware to Expert in each skill
+- **7 Mastery Levels**: Progress from Aware to Grandmaster (advanced levels 6-7 for select skills)
 - **T-Shaped Development**: Track your breadth (foundation skills) and depth (specializations)
+- **Learning Mode**: Explanations and documentation links after each answer
 - **XP & Progression**: Earn XP for correct answers, passing quizzes, perfect scores, and streaks
 - **Weapon Profiles**: Evolve from Dagger to Trident as your T-shape grows
 - **Persistent Progress**: All progress saved locally in your browser
@@ -15,10 +16,11 @@ A browser-based skill assessment game for Waldur developers. Test and track your
 ## How to Play
 
 1. **Start Quest** - Browse the skill tree and select a skill to test
-2. **Choose Level** - Pick a difficulty level (1-5) for the quiz
+2. **Choose Level** - Pick a difficulty level (1-5, or 1-7 for advanced skills)
 3. **Answer Questions** - Use mouse or keyboard (1-4) to select answers
-4. **Level Up** - Score 60% or higher to pass and unlock the next level
-5. **Build Your T-Shape** - Master breadth in Literacy/Foundation, then specialize deeply
+4. **Learn** - Read explanations and follow "Learn More" links to documentation
+5. **Level Up** - Score 60% or higher to pass and unlock the next level
+6. **Build Your T-Shape** - Master breadth in Literacy/Foundation, then specialize deeply
 
 ## Running Locally
 
@@ -69,18 +71,33 @@ Add questions to `js/data/questions.js`:
 'skill-id': {
     1: [  // Level 1 questions
         {
-            q: "Your question here?",
-            options: ["Option A", "Option B", "Option C", "Option D"],
-            correct: 0  // Index of correct answer
+            q: "What does the 'docker ps' command display?",
+            options: [
+                "A list of all available Docker images",
+                "Docker process and memory statistics",
+                "A list of currently running containers",
+                "Docker network configurations"
+            ],
+            correct: 2,  // Index of correct answer (shuffled at runtime)
+            explanation: "The 'docker ps' command shows running containers.",
+            learnMore: {
+                url: "https://docs.docker.com/engine/reference/commandline/ps/",
+                text: "📚 Docker Docs"
+            }
         },
         // More questions...
     ],
     2: [...],  // Level 2
-    // Up to level 5
+    // Up to level 7 for advanced skills
 }
 ```
 
-Each level should have at least 3-5 questions. Higher levels need more questions.
+**Question guidelines:**
+- All 4 options should be similar in length and plausibility
+- Include `explanation` to help users learn
+- Add `learnMore` URL linking to official documentation
+- Vary `correct` position (0-3) across questions
+- Each level needs at least 3-5 questions; higher levels need more
 
 ## XP System
 

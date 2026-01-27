@@ -25,7 +25,7 @@ For GitHub Pages deployment, push to a gh-pages branch or enable Pages in reposi
 - `index.html` - Entry point, loads KAPLAY from CDN and all JS files
 - `js/main.js` - Game initialization and all KAPLAY scenes
 - `js/data/skills.js` - Skill definitions (tiers, packages, weapon profiles)
-- `js/data/questions.js` - Question bank organized by skill ID and difficulty level (400+ questions)
+- `js/data/questions.js` - Question bank organized by skill ID and difficulty level (560+ questions)
 - `js/utils/storage.js` - LocalStorage persistence layer
 
 ### No Build System
@@ -53,10 +53,14 @@ KAPLAY uses `[` and `]` for styled text markup. Any dynamic text or text contain
 
 **Questions** (`js/data/questions.js`):
 - Keyed by skill ID, then by level (1-7)
-- Format: `{ q: "question", options: ["a", "b", "c", "d"], correct: 0 }`
-- Optional fields for learning assistance:
-  - `explanation`: Text explaining why the answer is correct (shown after answering)
-  - `learnMore`: Object with `url` and `text` for a tutorial link
+- Format: `{ q: "question", options: ["a", "b", "c", "d"], correct: 2, explanation: "...", learnMore: {...} }`
+- **Runtime shuffling**: Options are shuffled when displayed, so `correct` position in file doesn't affect gameplay
+- Fields:
+  - `q`: Question text
+  - `options`: Array of 4 answer choices (all similar length and plausibility)
+  - `correct`: Index (0-3) of correct answer - vary across questions for maintainability
+  - `explanation`: Why the answer is correct (shown after answering)
+  - `learnMore`: Object with `url` and `text` for tutorial link (highly recommended)
 - Helper functions: `getQuestionsForSkill()`, `getAvailableLevels()`, `hasQuestions()`
 - Minimum questions per level: L1-2: 3, L3-4: 4, L5: 5, L6-7: 6
 
@@ -125,13 +129,18 @@ Add to `js/data/questions.js` under the appropriate skill ID and level:
 'skill-id': {
     1: [
         {
-            q: "Your question text?",
-            options: ["Correct answer", "Plausible wrong 1", "Plausible wrong 2", "Plausible wrong 3"],
-            correct: 0,
-            explanation: "Why the correct answer is right and/or why others are wrong.",
+            q: "What does the 'docker ps' command display?",
+            options: [
+                "A list of all available Docker images on the system",
+                "Docker daemon process and memory statistics",
+                "A list of currently running containers",
+                "Configuration of Docker networks and volumes"
+            ],
+            correct: 2,
+            explanation: "The 'docker ps' command lists running containers. Use 'docker ps -a' to see all containers including stopped ones.",
             learnMore: {
-                url: "https://docs.example.com/topic",
-                text: "📚 Learn More"
+                url: "https://docs.docker.com/engine/reference/commandline/ps/",
+                text: "📚 Docker ps Reference"
             }
         }
     ],  // min 3 questions per level 1-2
@@ -139,6 +148,8 @@ Add to `js/data/questions.js` under the appropriate skill ID and level:
     // ... levels 6-7 (advanced): min 6 questions each
 }
 ```
+
+**Note:** Options are shuffled at runtime, so the `correct` index position in the file doesn't affect gameplay. Vary positions (0-3) across questions for easier code review.
 
 **Skills with Advanced Levels (6-7):**
 - Foundation: f-docker, f-git, f-ci-cd, f-linux, f-sql, f-testing
@@ -155,14 +166,16 @@ Add to `js/data/questions.js` under the appropriate skill ID and level:
 **Good example:**
 ```javascript
 {
-    q: "What does 'docker ps' show?",
+    q: "What does the 'docker ps' command display?",
     options: [
-        "List of currently running containers",
-        "List of all available Docker images",
-        "Docker process and memory statistics",
-        "List of Docker networks and volumes"
+        "A list of all available Docker images on the system",
+        "Docker daemon process and memory usage statistics",
+        "A list of currently running containers",
+        "Configuration of Docker networks and volumes"
     ],
-    correct: 0
+    correct: 2,
+    explanation: "The 'docker ps' command lists running containers.",
+    learnMore: { url: "https://docs.docker.com/engine/reference/commandline/ps/", text: "📚 Docker Docs" }
 }
 ```
 
@@ -171,21 +184,22 @@ Add to `js/data/questions.js` under the appropriate skill ID and level:
 {
     q: "What does 'docker ps' show?",
     options: [
-        "Running containers",
+        "A complete list of all currently running Docker containers",  // Correct but much longer
         "Images",           // Too short
         "Nothing",          // Absurd
         "Errors"            // Too vague
     ],
-    correct: 0
+    correct: 0  // Always position 0 is also a pattern to avoid
 }
 ```
 
 **Other guidelines:**
-- `explanation` and `learnMore` are optional but highly recommended for learning
-- Use validated, stable URLs (official docs preferred over blog posts)
+- `explanation` is required - helps users learn from mistakes
+- `learnMore` URL is highly recommended - link to official docs, not blog posts
+- All 4 options must be similar length (±20% character count)
 - Higher levels should have harder questions
 - Each quiz pulls 5 random questions from the level
-- Vary which position (0-3) the correct answer is in
+- Vary `correct` position (0-3) across questions for code maintainability
 
 ## Adding New Skills
 

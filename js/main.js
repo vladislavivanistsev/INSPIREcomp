@@ -1,4 +1,4 @@
-// Waldur Quest - Main Entry Point
+// ATI Quest - Main Entry Point
 // Uses global variables from skills.js, questions.js, and storage.js
 
 // Initialize KAPLAY with sharp text rendering
@@ -235,7 +235,7 @@ k.scene('menu', () => {
 
     // Title
     k.add([
-        k.text('WALDUR QUEST', { size: 64, font: 'Inter' }),
+        k.text('ATI QUEST', { size: 64, font: 'Inter' }),
         k.color(COLORS.gold),
         k.pos(k.width() / 2, 150),
         k.anchor('center'),
@@ -243,7 +243,7 @@ k.scene('menu', () => {
 
     // Subtitle
     k.add([
-        k.text('Skill Assessment Adventure', { size: 24, font: 'Inter' }),
+        k.text('Academic Skills Assessment', { size: 24, font: 'Inter' }),
         k.color(COLORS.textMuted),
         k.pos(k.width() / 2, 210),
         k.anchor('center'),
@@ -431,7 +431,7 @@ k.scene('menu', () => {
 
         // Left column
         addSection('🎯', 'Goal', [
-            'Master Waldur development skills',
+            'Master academic research skills',
             'across 5 tiers to level up.',
         ], leftX, row1Y);
 

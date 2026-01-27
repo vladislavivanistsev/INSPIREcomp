@@ -11,67 +11,77 @@ const questions = {
         1: [
             {
                 q: "What is the recommended structure for an academic paper's introduction?",
-                options: ["Context → Gap → Purpose → Overview", "Methods → Results → Discussion → Conclusion", "Abstract → Keywords → References → Appendix", "Hypothesis → Data → Analysis → Findings"],
-                correct: 0,
-                explanation: "The introduction typically follows the 'funnel' structure: establish context, identify the gap in knowledge, state your purpose/contribution, and preview the paper structure."
+                options: ["Hypothesis → Data → Analysis → Findings", "Context → Gap → Purpose → Overview", "Methods → Results → Discussion → Conclusion", "Abstract → Keywords → References → Appendix"],
+                correct: 1,
+                explanation: "The introduction typically follows the 'funnel' structure: establish context, identify the gap in knowledge, state your purpose/contribution, and preview the paper structure.",
+                learnMore: { url: "https://writingcenter.unc.edu/tips-and-tools/introductions/", text: "📚 UNC Writing Center: Introductions" }
             },
             {
                 q: "Which section of a research paper describes HOW the study was conducted?",
-                options: ["Methods/Methodology", "Results", "Discussion", "Introduction"],
-                correct: 0,
-                explanation: "The Methods section details the procedures, materials, and approaches used to conduct the research, enabling reproducibility."
+                options: ["The Results section with statistical tables", "The Discussion section with interpretations", "The Methods/Methodology section", "The Introduction section with background"],
+                correct: 2,
+                explanation: "The Methods section details the procedures, materials, and approaches used to conduct the research, enabling reproducibility.",
+                learnMore: { url: "https://www.scribbr.com/dissertation/methodology/", text: "📚 Scribbr: Writing a Methodology" }
             },
             {
                 q: "What is the primary purpose of an abstract?",
-                options: ["To provide a brief summary of the entire paper", "To list all references used", "To acknowledge funding sources", "To present raw data"],
-                correct: 0,
-                explanation: "An abstract is a concise summary (typically 150-300 words) that covers the purpose, methods, results, and conclusions of the paper."
+                options: ["To list all references used in the paper", "To acknowledge funding sources and contributors", "To present the complete raw research data", "To provide a brief summary of the entire paper"],
+                correct: 3,
+                explanation: "An abstract is a concise summary (typically 150-300 words) that covers the purpose, methods, results, and conclusions of the paper.",
+                learnMore: { url: "https://writing.wisc.edu/handbook/assignments/writing-an-abstract-for-your-research-paper/", text: "📚 UW-Madison: Writing Abstracts" }
             }
         ],
         2: [
             {
                 q: "What does 'signposting' mean in academic writing?",
-                options: ["Using phrases to guide readers through the argument", "Adding footnotes to every page", "Including maps and diagrams", "Citing sources in the text"],
+                options: ["Using transitional phrases to guide readers through arguments", "Adding detailed footnotes to every page of the paper", "Including visual diagrams and flowcharts in text", "Placing citation markers throughout the document"],
                 correct: 0,
-                explanation: "Signposting uses transitional phrases like 'First,' 'However,' 'In contrast,' to help readers follow the logical flow of arguments."
+                explanation: "Signposting uses transitional phrases like 'First,' 'However,' 'In contrast,' to help readers follow the logical flow of arguments.",
+                learnMore: { url: "https://www.phrasebank.manchester.ac.uk/signalling-transition/", text: "📚 Manchester Phrasebank: Transitions" }
             },
             {
                 q: "Which voice is generally preferred in scientific writing?",
-                options: ["Passive voice for objectivity", "First person singular always", "Second person for engagement", "Future tense throughout"],
-                correct: 0,
-                explanation: "While active voice is increasingly accepted, passive voice is traditionally used in scientific writing to maintain objectivity and focus on the research rather than the researcher."
+                options: ["Active voice for direct statements", "Passive voice for objectivity and focus", "Second person for reader engagement", "Imperative voice for clear instructions"],
+                correct: 1,
+                explanation: "While active voice is increasingly accepted, passive voice is traditionally used in scientific writing to maintain objectivity and focus on the research rather than the researcher.",
+                learnMore: { url: "https://academicguides.waldenu.edu/writingcenter/scholarlyvoice/activepassive", text: "📚 Walden: Active vs Passive Voice" }
             },
             {
                 q: "What is 'hedging' in academic writing?",
-                options: ["Using cautious language to avoid overclaiming", "Avoiding citations entirely", "Writing very short sentences", "Using informal language"],
-                correct: 0,
-                explanation: "Hedging uses words like 'may,' 'suggests,' 'appears to' to express appropriate caution about claims and acknowledge limitations."
+                options: ["Removing citations to streamline the text", "Using very short sentences for clarity", "Adopting informal language for accessibility", "Using cautious language to avoid overclaiming"],
+                correct: 3,
+                explanation: "Hedging uses words like 'may,' 'suggests,' 'appears to' to express appropriate caution about claims and acknowledge limitations.",
+                learnMore: { url: "https://www.phrasebank.manchester.ac.uk/being-cautious/", text: "📚 Manchester Phrasebank: Being Cautious" }
             }
         ],
         3: [
             {
                 q: "What is the IMRaD structure?",
-                options: ["Introduction, Methods, Results, and Discussion", "Index, Materials, References, and Data", "Inquiry, Measurement, Review, and Debate", "Ideas, Models, Research, and Development"],
-                correct: 0,
-                explanation: "IMRaD is the standard structure for empirical research papers in many scientific fields."
+                options: ["Ideas, Models, Research, and Development", "Introduction, Methods, Results, and Discussion", "Index, Materials, References, and Data", "Inquiry, Measurement, Review, and Debate"],
+                correct: 1,
+                explanation: "IMRaD is the standard structure for empirical research papers in many scientific fields.",
+                learnMore: { url: "https://libguides.usc.edu/writingguide/IMRaD", text: "📚 USC Libraries: IMRaD Format" }
             },
             {
                 q: "How should you handle conflicting evidence in your literature review?",
-                options: ["Acknowledge and analyze the contradictions", "Ignore studies that disagree with your hypothesis", "Only cite the most recent study", "Present only supporting evidence"],
-                correct: 0,
-                explanation: "Good academic writing acknowledges conflicting evidence and provides critical analysis of why discrepancies might exist."
+                options: ["Present only evidence that supports your hypothesis", "Cite only the most recent study on the topic", "Ignore studies that contradict your findings", "Acknowledge and critically analyze the contradictions"],
+                correct: 3,
+                explanation: "Good academic writing acknowledges conflicting evidence and provides critical analysis of why discrepancies might exist.",
+                learnMore: { url: "https://writingcenter.unc.edu/tips-and-tools/literature-reviews/", text: "📚 UNC: Literature Reviews" }
             },
             {
                 q: "What is a 'thesis statement' in academic writing?",
-                options: ["A clear declaration of the paper's main argument or purpose", "The list of references at the end", "A summary of methodology", "The acknowledgments section"],
-                correct: 0,
-                explanation: "A thesis statement clearly articulates the central argument or purpose of the paper, typically appearing in the introduction."
+                options: ["The complete list of references at the end", "A detailed summary of your methodology", "A clear declaration of the paper's main argument", "The acknowledgments section thanking contributors"],
+                correct: 2,
+                explanation: "A thesis statement clearly articulates the central argument or purpose of the paper, typically appearing in the introduction.",
+                learnMore: { url: "https://writingcenter.fas.harvard.edu/pages/developing-thesis", text: "📚 Harvard: Developing a Thesis" }
             },
             {
                 q: "Which is the best practice for paragraph structure?",
-                options: ["One main idea per paragraph with topic sentence first", "Multiple unrelated ideas to save space", "No clear structure to maintain reader interest", "Always exactly five sentences"],
+                options: ["One main idea per paragraph with topic sentence first", "Multiple ideas per paragraph to increase density", "Varying structure randomly to maintain interest", "Exactly five sentences in every paragraph"],
                 correct: 0,
-                explanation: "Each paragraph should focus on one main idea, introduced by a topic sentence and supported by evidence and analysis."
+                explanation: "Each paragraph should focus on one main idea, introduced by a topic sentence and supported by evidence and analysis.",
+                learnMore: { url: "https://writingcenter.unc.edu/tips-and-tools/paragraphs/", text: "📚 UNC: Paragraph Development" }
             }
         ]
     },
@@ -80,67 +90,77 @@ const questions = {
         1: [
             {
                 q: "What is the recommended maximum number of bullet points per slide?",
-                options: ["5-7 points", "15-20 points", "1 point only", "As many as fit"],
-                correct: 0,
-                explanation: "The 7x7 rule suggests no more than 7 bullet points per slide with 7 words each to maintain audience attention."
+                options: ["As many points as will fit on the slide", "Between 5-7 bullet points maximum", "Exactly 10 bullet points per slide", "No more than 15-20 bullet points"],
+                correct: 1,
+                explanation: "The 7x7 rule suggests no more than 7 bullet points per slide with 7 words each to maintain audience attention.",
+                learnMore: { url: "https://www.duarte.com/presentation-skills-resources/", text: "📚 Duarte: Presentation Resources" }
             },
             {
                 q: "How long should a typical conference presentation be?",
-                options: ["15-20 minutes plus Q&A", "60 minutes minimum", "5 minutes exactly", "As long as needed"],
-                correct: 0,
-                explanation: "Most conference talks are 15-20 minutes with 5-10 minutes for questions, though this varies by venue."
+                options: ["Around 60 minutes with extended discussion", "Approximately 15-20 minutes plus Q&A time", "Exactly 5 minutes without questions", "However long you need to cover material"],
+                correct: 1,
+                explanation: "Most conference talks are 15-20 minutes with 5-10 minutes for questions, though this varies by venue.",
+                learnMore: { url: "https://www.acm.org/publications/proceedings-template", text: "📚 ACM Conference Guidelines" }
             },
             {
                 q: "What should be the font size minimum for presentation slides?",
-                options: ["24-28 point", "8-10 point", "12 point", "48 point only"],
-                correct: 0,
-                explanation: "A minimum of 24-28 point ensures readability from the back of the room."
+                options: ["8-10 point for detailed information", "Around 12 point like in documents", "At least 24-28 point for visibility", "Only 48 point or larger fonts"],
+                correct: 2,
+                explanation: "A minimum of 24-28 point ensures readability from the back of the room.",
+                learnMore: { url: "https://www.presentationzen.com/", text: "📚 Presentation Zen" }
             }
         ],
         2: [
             {
                 q: "What is the 'Rule of Three' in presentations?",
-                options: ["Organize content into three main points", "Always use three colors", "Present for exactly three minutes", "Include three authors"],
-                correct: 0,
-                explanation: "Audiences remember information better when organized into three main points or sections."
+                options: ["Always include exactly three authors", "Present for exactly three minutes total", "Organize content into three main points", "Use exactly three colors throughout"],
+                correct: 2,
+                explanation: "Audiences remember information better when organized into three main points or sections.",
+                learnMore: { url: "https://hbr.org/2012/07/the-irresistible-power-of-stor", text: "📚 HBR: Power of Storytelling" }
             },
             {
                 q: "What should you do in the first 30 seconds of a presentation?",
-                options: ["Hook the audience with a compelling opening", "Read your biography", "Show your table of contents", "Apologize for any shortcomings"],
-                correct: 0,
-                explanation: "The opening should capture attention through a question, surprising fact, or relevant anecdote."
+                options: ["Read through your complete biography", "Show the detailed table of contents", "Apologize for any potential shortcomings", "Hook the audience with a compelling opening"],
+                correct: 3,
+                explanation: "The opening should capture attention through a question, surprising fact, or relevant anecdote.",
+                learnMore: { url: "https://www.ted.com/talks", text: "📚 TED Talks: Presentation Examples" }
             },
             {
                 q: "How should you handle technical difficulties during a presentation?",
-                options: ["Stay calm and have a backup plan ready", "Cancel the presentation immediately", "Blame the organizers publicly", "Continue as if nothing happened"],
-                correct: 0,
-                explanation: "Prepare backups (USB, email copy, printed notes) and remain composed - audiences are understanding of technical issues."
+                options: ["Cancel the presentation and reschedule it", "Stay calm and switch to your backup plan", "Publicly blame the conference organizers", "Continue as though nothing has happened"],
+                correct: 1,
+                explanation: "Prepare backups (USB, email copy, printed notes) and remain composed - audiences are understanding of technical issues.",
+                learnMore: { url: "https://www.toastmasters.org/resources", text: "📚 Toastmasters: Public Speaking" }
             }
         ],
         3: [
             {
                 q: "What is an 'elevator pitch' for research?",
-                options: ["A 30-60 second summary of your work for non-experts", "A formal grant proposal", "A detailed methodology description", "A list of publications"],
-                correct: 0,
-                explanation: "An elevator pitch concisely explains your research's importance and impact in the time of an elevator ride."
+                options: ["A formal written grant proposal document", "A comprehensive methodology description", "A 30-60 second summary for non-experts", "A complete list of your publications"],
+                correct: 2,
+                explanation: "An elevator pitch concisely explains your research's importance and impact in the time of an elevator ride.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-018-07025-7", text: "📚 Nature: Elevator Pitch Tips" }
             },
             {
                 q: "How should you design slides for accessibility?",
-                options: ["High contrast colors and sans-serif fonts", "Small fonts with decorative backgrounds", "Red and green color coding", "Dense text blocks"],
-                correct: 0,
-                explanation: "Accessible slides use high contrast, clear fonts, and avoid relying solely on color to convey information."
+                options: ["Use small fonts with decorative backgrounds", "Rely on red and green color coding for data", "Use high contrast colors and sans-serif fonts", "Include dense text blocks for completeness"],
+                correct: 2,
+                explanation: "Accessible slides use high contrast, clear fonts, and avoid relying solely on color to convey information.",
+                learnMore: { url: "https://www.w3.org/WAI/teach-advocate/accessible-presentations/", text: "📚 W3C: Accessible Presentations" }
             },
             {
                 q: "What is the best way to handle hostile questions?",
-                options: ["Respond calmly and acknowledge valid points", "Argue back aggressively", "Ignore the questioner", "Leave the stage immediately"],
-                correct: 0,
-                explanation: "Stay professional, acknowledge legitimate concerns, and redirect to your evidence-based findings."
+                options: ["Argue back aggressively to defend your work", "Ignore the questioner and move on quickly", "Leave the stage immediately to avoid conflict", "Respond calmly and acknowledge valid points"],
+                correct: 3,
+                explanation: "Stay professional, acknowledge legitimate concerns, and redirect to your evidence-based findings.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01041-9", text: "📚 Nature: Handling Q&A" }
             },
             {
                 q: "What is a poster 'lightning talk'?",
-                options: ["A 1-3 minute verbal summary of your poster", "A 60-minute detailed presentation", "An informal chat at a poster session", "A written abstract submission"],
-                correct: 0,
-                explanation: "Lightning talks are brief presentations (1-3 minutes) that introduce poster content before the session."
+                options: ["A detailed 60-minute presentation session", "A 1-3 minute verbal summary of your poster", "An informal discussion at the poster board", "A written abstract submitted beforehand"],
+                correct: 1,
+                explanation: "Lightning talks are brief presentations (1-3 minutes) that introduce poster content before the session.",
+                learnMore: { url: "https://www.acm.org/conferences/best-practices", text: "📚 ACM: Conference Best Practices" }
             }
         ]
     },
@@ -149,67 +169,77 @@ const questions = {
         1: [
             {
                 q: "What is research misconduct?",
-                options: ["Fabrication, falsification, or plagiarism in research", "Making honest errors in analysis", "Having your paper rejected", "Disagreeing with reviewers"],
-                correct: 0,
-                explanation: "Research misconduct specifically refers to fabrication (making up data), falsification (manipulating data), or plagiarism (FFP)."
+                options: ["Making honest computational errors in analysis", "Fabrication, falsification, or plagiarism in research", "Having your paper rejected by reviewers", "Disagreeing with peer reviewer comments"],
+                correct: 1,
+                explanation: "Research misconduct specifically refers to fabrication (making up data), falsification (manipulating data), or plagiarism (FFP).",
+                learnMore: { url: "https://ori.hhs.gov/definition-research-misconduct", text: "📚 ORI: Research Misconduct" }
             },
             {
                 q: "What is informed consent in research?",
-                options: ["Participants understand and agree to participate", "Researchers consent to publish", "Journals agree to review", "Universities approve funding"],
-                correct: 0,
-                explanation: "Informed consent ensures participants understand the research purpose, procedures, risks, and their rights before agreeing to participate."
+                options: ["Researchers giving consent to publish findings", "Journals agreeing to review the manuscript", "Universities approving the funding request", "Participants understanding and agreeing to participate"],
+                correct: 3,
+                explanation: "Informed consent ensures participants understand the research purpose, procedures, risks, and their rights before agreeing to participate.",
+                learnMore: { url: "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/informed-consent/index.html", text: "📚 OHRP: Informed Consent" }
             },
             {
                 q: "Why is data management important for research ethics?",
-                options: ["Enables verification and reproducibility", "Makes papers longer", "Satisfies journal requirements only", "Reduces storage costs"],
-                correct: 0,
-                explanation: "Proper data management ensures research can be verified, reproduced, and that data is handled responsibly."
+                options: ["It makes research papers noticeably longer", "It satisfies journal formatting requirements only", "It enables verification and reproducibility", "It reduces institutional data storage costs"],
+                correct: 2,
+                explanation: "Proper data management ensures research can be verified, reproduced, and that data is handled responsibly.",
+                learnMore: { url: "https://www.go-fair.org/fair-principles/", text: "📚 GO FAIR: FAIR Principles" }
             }
         ],
         2: [
             {
                 q: "What is a conflict of interest in research?",
-                options: ["When personal interests could bias research", "When two researchers disagree", "When funding is insufficient", "When deadlines conflict"],
-                correct: 0,
-                explanation: "Conflicts of interest occur when financial, personal, or professional factors could improperly influence research decisions."
+                options: ["When two researchers disagree on methods", "When project deadlines overlap and conflict", "When personal interests could bias research", "When research funding is deemed insufficient"],
+                correct: 2,
+                explanation: "Conflicts of interest occur when financial, personal, or professional factors could improperly influence research decisions.",
+                learnMore: { url: "https://publicationethics.org/resources/guidelines/guidelines-handling-conflict-interest", text: "📚 COPE: Conflict of Interest" }
             },
             {
                 q: "What is the purpose of an ethics committee (IRB/ERB)?",
-                options: ["To protect research participants from harm", "To approve research budgets", "To edit manuscripts", "To hire researchers"],
-                correct: 0,
-                explanation: "Ethics committees review research proposals to ensure participant safety, privacy, and ethical treatment."
+                options: ["To approve research project budgets", "To edit and improve research manuscripts", "To hire and evaluate researchers", "To protect research participants from harm"],
+                correct: 3,
+                explanation: "Ethics committees review research proposals to ensure participant safety, privacy, and ethical treatment.",
+                learnMore: { url: "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/institutional-review-boards-frequently-asked-questions", text: "📚 FDA: IRB FAQ" }
             },
             {
                 q: "What constitutes authorship according to ICMJE guidelines?",
-                options: ["Substantial contribution, drafting/revising, approval, accountability", "Any involvement in the project", "Providing funding only", "Being a supervisor automatically"],
-                correct: 0,
-                explanation: "ICMJE criteria require substantial contributions to conception/design/analysis, drafting/revising, final approval, and accountability."
+                options: ["Being a supervisor on the research project", "Providing funding for the research activities", "Any minor involvement in the project work", "Substantial contribution, drafting, approval, and accountability"],
+                correct: 3,
+                explanation: "ICMJE criteria require substantial contributions to conception/design/analysis, drafting/revising, final approval, and accountability.",
+                learnMore: { url: "https://www.icmje.org/recommendations/browse/roles-and-responsibilities/defining-the-role-of-authors-and-contributors.html", text: "📚 ICMJE: Authorship" }
             }
         ],
         3: [
             {
                 q: "What is 'salami slicing' in publication ethics?",
-                options: ["Splitting one study into multiple papers inappropriately", "Editing data to fit hypotheses", "Cutting text to meet word limits", "Removing co-authors"],
+                options: ["Splitting one study into multiple papers inappropriately", "Editing research data to fit your hypothesis", "Cutting text down to meet journal word limits", "Removing co-authors from the publication list"],
                 correct: 0,
-                explanation: "Salami slicing fragments research into minimum publishable units to inflate publication counts."
+                explanation: "Salami slicing fragments research into minimum publishable units to inflate publication counts.",
+                learnMore: { url: "https://publicationethics.org/resources/discussion-documents/salami-slicing", text: "📚 COPE: Duplicate Publication" }
             },
             {
                 q: "What is the Declaration of Helsinki?",
-                options: ["Ethical principles for medical research involving humans", "A funding agreement between EU countries", "A copyright protection treaty", "A university ranking system"],
-                correct: 0,
-                explanation: "The Declaration of Helsinki establishes ethical principles for medical research involving human subjects."
+                options: ["A university ranking system for research", "Ethical principles for medical research with humans", "A funding agreement between European countries", "A copyright protection treaty for researchers"],
+                correct: 1,
+                explanation: "The Declaration of Helsinki establishes ethical principles for medical research involving human subjects.",
+                learnMore: { url: "https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/", text: "📚 WMA: Helsinki Declaration" }
             },
             {
                 q: "What is 'p-hacking' in research?",
-                options: ["Manipulating analyses until achieving statistical significance", "Hacking into research databases", "Publishing quickly for priority", "Testing multiple hypotheses transparently"],
-                correct: 0,
-                explanation: "P-hacking involves manipulating data analysis to achieve significant p-values, a form of questionable research practice."
+                options: ["Hacking into research institution databases", "Publishing results quickly to establish priority", "Transparently testing multiple research hypotheses", "Manipulating analyses until achieving statistical significance"],
+                correct: 3,
+                explanation: "P-hacking involves manipulating data analysis to achieve significant p-values, a form of questionable research practice.",
+                learnMore: { url: "https://www.nature.com/articles/s41562-016-0021", text: "📚 Nature: Redefine Statistical Significance" }
             },
             {
                 q: "What is the purpose of pre-registration?",
-                options: ["Document hypotheses and methods before data collection", "Register copyright for ideas", "Book conference presentations", "Apply for ethics approval"],
-                correct: 0,
-                explanation: "Pre-registration records study design and analysis plans in advance to prevent questionable research practices."
+                options: ["Registering copyright protection for your ideas", "Booking slots for conference presentations early", "Applying for ethics committee approval in advance", "Documenting hypotheses and methods before data collection"],
+                correct: 3,
+                explanation: "Pre-registration records study design and analysis plans in advance to prevent questionable research practices.",
+                learnMore: { url: "https://www.cos.io/initiatives/prereg", text: "📚 COS: Preregistration" }
             }
         ]
     },
@@ -218,67 +248,77 @@ const questions = {
         1: [
             {
                 q: "What is the primary purpose of peer review in academic publishing?",
-                options: ["To evaluate research quality before publication", "To reject as many papers as possible", "To delay publication of competitors", "To increase journal profits"],
-                correct: 0,
-                explanation: "Peer review serves as quality control, helping ensure published research meets scientific standards."
+                options: ["To reject as many submitted papers as possible", "To delay the publication of competing research", "To evaluate research quality before publication", "To increase journal subscription profits"],
+                correct: 2,
+                explanation: "Peer review serves as quality control, helping ensure published research meets scientific standards.",
+                learnMore: { url: "https://peerreview.research.unimelb.edu.au/", text: "📚 Melbourne: Peer Review Guide" }
             },
             {
                 q: "What should a reviewer do if they have a conflict of interest with the paper?",
-                options: ["Decline to review and notify the editor", "Review it anyway but be extra critical", "Ask a colleague to review in their place", "Accept but disclose the conflict in the review"],
-                correct: 0,
-                explanation: "Reviewers should decline reviews where they have conflicts (e.g., collaborators, competitors, personal relationships)."
+                options: ["Review the paper anyway but be extra critical", "Ask a colleague to review it in their place", "Accept but disclose the conflict in the review", "Decline to review and notify the editor immediately"],
+                correct: 3,
+                explanation: "Reviewers should decline reviews where they have conflicts (e.g., collaborators, competitors, personal relationships).",
+                learnMore: { url: "https://publicationethics.org/resources/guidelines/cope-ethical-guidelines-peer-reviewers", text: "📚 COPE: Peer Reviewer Ethics" }
             },
             {
                 q: "What is 'single-blind' peer review?",
-                options: ["Reviewers know authors, but authors don't know reviewers", "Neither party knows the other's identity", "Both parties know each other's identity", "Only the editor knows both identities"],
+                options: ["Reviewers know authors, but authors don't know reviewers", "Neither party knows the identity of the other", "Both parties know each other's full identity", "The editor alone knows everyone's identities"],
                 correct: 0,
-                explanation: "In single-blind review, reviewer identities are hidden from authors but reviewers can see author names."
+                explanation: "In single-blind review, reviewer identities are hidden from authors but reviewers can see author names.",
+                learnMore: { url: "https://www.elsevier.com/reviewers/what-is-peer-review", text: "📚 Elsevier: Types of Peer Review" }
             }
         ],
         2: [
             {
                 q: "What should a constructive peer review include?",
-                options: ["Specific, actionable feedback with justification", "Only negative criticism to improve the paper", "Personal opinions about the authors", "Recommendations to cite the reviewer's work"],
-                correct: 0,
-                explanation: "Good reviews provide specific, constructive feedback that helps authors improve their work."
+                options: ["Personal opinions about the research authors", "Only negative criticism to drive improvement", "Suggestions to cite the reviewer's own papers", "Specific, actionable feedback with clear justification"],
+                correct: 3,
+                explanation: "Good reviews provide specific, constructive feedback that helps authors improve their work.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-018-06991-0", text: "📚 Nature: How to Write a Review" }
             },
             {
                 q: "What is 'double-blind' peer review?",
-                options: ["Neither reviewers nor authors know each other's identity", "Two reviewers evaluate each paper", "The review happens in two rounds", "Reviews are published with two versions"],
-                correct: 0,
-                explanation: "Double-blind review anonymizes both authors and reviewers to reduce bias."
+                options: ["The review process happens in two separate rounds", "Neither reviewers nor authors know each other's identity", "Exactly two reviewers evaluate each submitted paper", "Reviews are published in two different versions"],
+                correct: 1,
+                explanation: "Double-blind review anonymizes both authors and reviewers to reduce bias.",
+                learnMore: { url: "https://www.wiley.com/en-us/network/publishing/research-publishing/peer-review/double-blind-peer-review", text: "📚 Wiley: Double-Blind Review" }
             },
             {
                 q: "How long should a typical journal peer review take?",
-                options: ["2-4 weeks is considered reasonable", "Same day turnaround expected", "6-12 months is normal", "Time doesn't matter in peer review"],
-                correct: 0,
-                explanation: "While timelines vary, 2-4 weeks is a reasonable expectation; longer delays frustrate authors and slow science."
+                options: ["Same day turnaround is the expected standard", "Between 2-4 weeks is considered reasonable", "Around 6-12 months is typical and normal", "Time constraints don't apply to peer review"],
+                correct: 1,
+                explanation: "While timelines vary, 2-4 weeks is a reasonable expectation; longer delays frustrate authors and slow science.",
+                learnMore: { url: "https://scholarlykitchen.sspnet.org/peer-review/", text: "📚 Scholarly Kitchen: Peer Review" }
             }
         ],
         3: [
             {
                 q: "What is 'open peer review'?",
-                options: ["Reviews and/or reviewer identities are publicly available", "Anyone can submit a review", "Papers are reviewed before submission", "Reviews are conducted via video call"],
-                correct: 0,
-                explanation: "Open peer review can mean published reviews, disclosed identities, or public participation in review."
+                options: ["Anyone from the public can submit a review", "Papers must be reviewed before any submission", "Reviews and/or reviewer identities are publicly available", "All reviews are conducted through video calls"],
+                correct: 2,
+                explanation: "Open peer review can mean published reviews, disclosed identities, or public participation in review.",
+                learnMore: { url: "https://f1000research.com/about", text: "📚 F1000Research: Open Review" }
             },
             {
                 q: "What is a 'major revision' decision?",
-                options: ["Significant changes needed, paper will be re-reviewed", "Paper is rejected permanently", "Minor typos need fixing", "Paper is accepted as-is"],
-                correct: 0,
-                explanation: "Major revision means substantial improvements are required and the revised paper will undergo another review round."
+                options: ["The paper has been rejected permanently", "Only minor typos and formatting need fixing", "The paper is accepted exactly as submitted", "Significant changes needed and paper will be re-reviewed"],
+                correct: 3,
+                explanation: "Major revision means substantial improvements are required and the revised paper will undergo another review round.",
+                learnMore: { url: "https://www.springer.com/gp/authors-editors/journal-author/journal-author-helpdesk/peer-review-process", text: "📚 Springer: Review Decisions" }
             },
             {
                 q: "What is the reviewer's responsibility regarding confidentiality?",
-                options: ["Keep manuscript contents confidential until published", "Share interesting findings with colleagues", "Post preprints on social media", "Discuss with students as teaching material"],
-                correct: 0,
-                explanation: "Reviewers must maintain confidentiality and not share, discuss, or use unpublished manuscript content."
+                options: ["Share interesting findings with research colleagues", "Post manuscript preprints on social media", "Use content as teaching material for students", "Keep manuscript contents confidential until published"],
+                correct: 3,
+                explanation: "Reviewers must maintain confidentiality and not share, discuss, or use unpublished manuscript content.",
+                learnMore: { url: "https://publicationethics.org/resources/guidelines/cope-ethical-guidelines-peer-reviewers", text: "📚 COPE: Reviewer Confidentiality" }
             },
             {
                 q: "What is 'registered reports' peer review?",
-                options: ["Review of methods before data collection, acceptance based on design", "Papers registered with a government database", "Reviews submitted to a central registry", "Authors must register before submitting"],
-                correct: 0,
-                explanation: "Registered reports review the study design before data collection, reducing publication bias."
+                options: ["Papers must be registered with a government database", "Reviews are submitted to a centralized registry", "Review of methods before data collection, acceptance based on design", "Authors must register an account before submitting"],
+                correct: 2,
+                explanation: "Registered reports review the study design before data collection, reducing publication bias.",
+                learnMore: { url: "https://www.cos.io/initiatives/registered-reports", text: "📚 COS: Registered Reports" }
             }
         ]
     },
@@ -287,67 +327,77 @@ const questions = {
         1: [
             {
                 q: "What is the main purpose of a literature review?",
-                options: ["Synthesize existing knowledge and identify gaps", "List every paper ever written on a topic", "Prove your hypothesis is correct", "Replace the need for original research"],
-                correct: 0,
-                explanation: "A literature review surveys existing research to understand the field and identify what's missing or unknown."
+                options: ["To prove that your hypothesis is definitely correct", "To replace the need for conducting original research", "To list every paper ever published on the topic", "To synthesize existing knowledge and identify gaps"],
+                correct: 3,
+                explanation: "A literature review surveys existing research to understand the field and identify what's missing or unknown.",
+                learnMore: { url: "https://writingcenter.unc.edu/tips-and-tools/literature-reviews/", text: "📚 UNC: Literature Reviews" }
             },
             {
                 q: "Which database is commonly used for computer science literature?",
-                options: ["Google Scholar, ACM Digital Library, IEEE Xplore", "PubMed only", "Social media platforms", "Wikipedia"],
-                correct: 0,
-                explanation: "CS researchers typically use Google Scholar, ACM DL, IEEE Xplore, DBLP, and Scopus."
+                options: ["PubMed as the only reliable source", "General social media platforms like Twitter", "Wikipedia articles and user-edited pages", "Google Scholar, ACM Digital Library, and IEEE Xplore"],
+                correct: 3,
+                explanation: "CS researchers typically use Google Scholar, ACM DL, IEEE Xplore, DBLP, and Scopus.",
+                learnMore: { url: "https://dl.acm.org/", text: "📚 ACM Digital Library" }
             },
             {
                 q: "What is a 'systematic review'?",
-                options: ["A structured, reproducible search and analysis of literature", "A review written by one author systematically", "A review of systems engineering papers", "Any review that uses a database"],
-                correct: 0,
-                explanation: "Systematic reviews follow predefined protocols for searching, selecting, and analyzing literature to minimize bias."
+                options: ["A review written systematically by a single author", "Any review that happens to use a database", "A review focused on systems engineering papers", "A structured, reproducible search and analysis of literature"],
+                correct: 3,
+                explanation: "Systematic reviews follow predefined protocols for searching, selecting, and analyzing literature to minimize bias.",
+                learnMore: { url: "https://www.cochranelibrary.com/about/about-cochrane-reviews", text: "📚 Cochrane: Systematic Reviews" }
             }
         ],
         2: [
             {
                 q: "What are Boolean operators in literature searching?",
-                options: ["AND, OR, NOT to combine search terms", "True and False values in papers", "Mathematical operators in formulas", "Operators who manage library systems"],
-                correct: 0,
-                explanation: "Boolean operators (AND, OR, NOT) help construct precise database queries to find relevant papers."
+                options: ["True and False values found in papers", "Mathematical operators used in formulas", "People who manage library search systems", "AND, OR, NOT commands to combine search terms"],
+                correct: 3,
+                explanation: "Boolean operators (AND, OR, NOT) help construct precise database queries to find relevant papers.",
+                learnMore: { url: "https://libguides.mit.edu/c.php?g=175963&p=1158679", text: "📚 MIT: Database Search Tips" }
             },
             {
                 q: "What is 'snowballing' in literature review?",
-                options: ["Following references forward and backward from key papers", "Adding more papers until the review is too large", "Starting with many papers and reducing", "A method of rapid paper reading"],
-                correct: 0,
-                explanation: "Snowballing finds additional papers by checking citations (backward) and citing papers (forward) of key articles."
+                options: ["Accumulating papers until the review becomes unmanageable", "Starting with many papers and progressively reducing", "A method for reading papers more quickly", "Following references forward and backward from key papers"],
+                correct: 3,
+                explanation: "Snowballing finds additional papers by checking citations (backward) and citing papers (forward) of key articles.",
+                learnMore: { url: "https://www.sciencedirect.com/science/article/abs/pii/S0164121214000369", text: "📚 Snowballing Guidelines" }
             },
             {
                 q: "What should inclusion/exclusion criteria specify?",
-                options: ["Which papers to include or exclude and why", "How to format the reference list", "The journal's acceptance rate", "Author qualifications required"],
+                options: ["Which papers to include or exclude and why", "How to format your reference list properly", "The journal's historical acceptance rate", "Required qualifications for paper authors"],
                 correct: 0,
-                explanation: "Clear criteria (date range, language, study type, etc.) ensure reproducible and unbiased paper selection."
+                explanation: "Clear criteria (date range, language, study type, etc.) ensure reproducible and unbiased paper selection.",
+                learnMore: { url: "https://guides.lib.unc.edu/systematic-reviews/inclusion-exclusion", text: "📚 UNC: Inclusion Criteria" }
             }
         ],
         3: [
             {
                 q: "What is a PRISMA diagram?",
-                options: ["Flowchart showing literature search and selection process", "A type of research methodology", "Software for managing references", "A citation network visualization"],
-                correct: 0,
-                explanation: "PRISMA diagrams document how many papers were found, screened, and included/excluded at each stage."
+                options: ["A type of qualitative research methodology", "Specialized software for managing references", "A visualization of citation network connections", "A flowchart showing literature search and selection process"],
+                correct: 3,
+                explanation: "PRISMA diagrams document how many papers were found, screened, and included/excluded at each stage.",
+                learnMore: { url: "https://www.prisma-statement.org/", text: "📚 PRISMA Statement" }
             },
             {
                 q: "What distinguishes a scoping review from a systematic review?",
-                options: ["Scoping maps the field; systematic answers specific questions", "Scoping is faster and less rigorous", "Systematic reviews are only for medical research", "There is no meaningful difference"],
-                correct: 0,
-                explanation: "Scoping reviews explore the breadth of a topic; systematic reviews answer focused questions with strict protocols."
+                options: ["Scoping reviews are faster but less rigorous", "Systematic reviews only apply to medical research", "There is no meaningful difference between them", "Scoping maps the field broadly; systematic answers specific questions"],
+                correct: 3,
+                explanation: "Scoping reviews explore the breadth of a topic; systematic reviews answer focused questions with strict protocols.",
+                learnMore: { url: "https://jbi.global/scoping-review-network", text: "📚 JBI: Scoping Reviews" }
             },
             {
                 q: "What is citation management software used for?",
-                options: ["Organizing references and generating bibliographies", "Automatically writing literature reviews", "Measuring your h-index", "Peer reviewing papers"],
-                correct: 0,
-                explanation: "Tools like Zotero, Mendeley, and EndNote help collect, organize, and format citations."
+                options: ["Automatically generating complete literature reviews", "Calculating and tracking your h-index", "Conducting peer review of submitted papers", "Organizing references and generating bibliographies"],
+                correct: 3,
+                explanation: "Tools like Zotero, Mendeley, and EndNote help collect, organize, and format citations.",
+                learnMore: { url: "https://www.zotero.org/", text: "📚 Zotero" }
             },
             {
                 q: "What is 'grey literature' in research?",
-                options: ["Reports, theses, and documents not formally published", "Papers from disreputable journals", "Older papers from before digital archives", "Papers written in unclear language"],
-                correct: 0,
-                explanation: "Grey literature includes technical reports, white papers, theses, and conference papers not in traditional journals."
+                options: ["Papers published in disreputable or predatory journals", "Older papers from before digital archive systems", "Academic papers written in unclear technical language", "Reports, theses, and documents not formally published"],
+                correct: 3,
+                explanation: "Grey literature includes technical reports, white papers, theses, and conference papers not in traditional journals.",
+                learnMore: { url: "https://guides.lib.berkeley.edu/c.php?g=83917&p=541314", text: "📚 Berkeley: Grey Literature" }
             }
         ]
     },
@@ -356,67 +406,77 @@ const questions = {
         1: [
             {
                 q: "What does FAIR stand for in research data management?",
-                options: ["Findable, Accessible, Interoperable, Reusable", "Fast, Accurate, Indexed, Reliable", "Free, Available, International, Reviewed", "Formatted, Archived, Integrated, Recorded"],
-                correct: 0,
-                explanation: "FAIR principles guide data management to maximize the value and reusability of research data."
+                options: ["Fast, Accurate, Indexed, and Reliable", "Free, Available, International, and Reviewed", "Formatted, Archived, Integrated, and Recorded", "Findable, Accessible, Interoperable, and Reusable"],
+                correct: 3,
+                explanation: "FAIR principles guide data management to maximize the value and reusability of research data.",
+                learnMore: { url: "https://www.go-fair.org/fair-principles/", text: "📚 GO FAIR Principles" }
             },
             {
                 q: "What is a Data Management Plan (DMP)?",
-                options: ["Document describing how data will be handled throughout research", "Software for organizing research files", "A backup system for computers", "The methods section of a paper"],
-                correct: 0,
-                explanation: "A DMP outlines data collection, storage, sharing, and preservation strategies for a research project."
+                options: ["Specialized software for organizing research files", "A backup system for protecting your computers", "A document describing how data will be handled throughout research", "The methods section describing data analysis"],
+                correct: 2,
+                explanation: "A DMP outlines data collection, storage, sharing, and preservation strategies for a research project.",
+                learnMore: { url: "https://dmptool.org/", text: "📚 DMPTool" }
             },
             {
                 q: "Why is documenting data important?",
-                options: ["So others can understand and reuse it", "To increase file size", "It's only required for funded research", "To make data harder to access"],
-                correct: 0,
-                explanation: "Good documentation (metadata) ensures data remains understandable and usable long-term."
+                options: ["To artificially increase your file sizes", "To make data harder for others to access", "Only because funded research requires it", "So others can understand and reuse your data"],
+                correct: 3,
+                explanation: "Good documentation (metadata) ensures data remains understandable and usable long-term.",
+                learnMore: { url: "https://www.dcc.ac.uk/guidance/standards/", text: "📚 DCC: Metadata Standards" }
             }
         ],
         2: [
             {
                 q: "What is a persistent identifier for datasets?",
-                options: ["A permanent reference like a DOI that won't change", "A temporary URL for data download", "The filename of the dataset", "The researcher's email address"],
-                correct: 0,
-                explanation: "Persistent identifiers like DOIs ensure data can be cited and found even if storage locations change."
+                options: ["A temporary URL for downloading the data", "The original filename of the dataset file", "The researcher's institutional email address", "A permanent reference like a DOI that won't change"],
+                correct: 3,
+                explanation: "Persistent identifiers like DOIs ensure data can be cited and found even if storage locations change.",
+                learnMore: { url: "https://www.doi.org/", text: "📚 DOI Foundation" }
             },
             {
                 q: "What is data versioning?",
-                options: ["Tracking changes to datasets over time", "Using the latest software version", "Numbering your research papers", "Creating multiple copies for backup"],
-                correct: 0,
-                explanation: "Version control for data tracks modifications, enabling reproducibility and error correction."
+                options: ["Always using the latest software version", "Creating multiple backup copies for safety", "Assigning numbers to your research papers", "Tracking changes to datasets over time"],
+                correct: 3,
+                explanation: "Version control for data tracks modifications, enabling reproducibility and error correction.",
+                learnMore: { url: "https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control", text: "📚 Git: Version Control" }
             },
             {
                 q: "What is a data repository?",
-                options: ["A platform for storing and sharing research data", "A personal hard drive", "The appendix of a paper", "A database management system"],
-                correct: 0,
-                explanation: "Repositories like Zenodo, Figshare, or domain-specific archives provide long-term data storage and access."
+                options: ["Your personal hard drive or computer storage", "The appendix section of a research paper", "A relational database management system", "A platform for storing and sharing research data"],
+                correct: 3,
+                explanation: "Repositories like Zenodo, Figshare, or domain-specific archives provide long-term data storage and access.",
+                learnMore: { url: "https://zenodo.org/", text: "📚 Zenodo" }
             }
         ],
         3: [
             {
                 q: "What is metadata in research data management?",
-                options: ["Descriptive information about the data itself", "The main research findings", "Raw experimental measurements", "Statistical analysis results"],
-                correct: 0,
-                explanation: "Metadata describes data characteristics (format, creator, date, methodology) enabling discovery and reuse."
+                options: ["The main findings of your research study", "Raw experimental measurement values", "The results of your statistical analysis", "Descriptive information about the data itself"],
+                correct: 3,
+                explanation: "Metadata describes data characteristics (format, creator, date, methodology) enabling discovery and reuse.",
+                learnMore: { url: "https://www.dcc.ac.uk/guidance/standards/", text: "📚 DCC: Metadata" }
             },
             {
                 q: "What is the purpose of a data dictionary?",
-                options: ["Define variables, values, and their meanings in a dataset", "Translate data between languages", "List all databases in the world", "Correct spelling errors in data"],
-                correct: 0,
-                explanation: "A data dictionary documents each variable's name, type, allowed values, and meaning."
+                options: ["To translate data between different languages", "To catalog all databases that exist worldwide", "To correct spelling errors found in datasets", "To define variables, values, and their meanings in a dataset"],
+                correct: 3,
+                explanation: "A data dictionary documents each variable's name, type, allowed values, and meaning.",
+                learnMore: { url: "https://osf.io/sj8bv/", text: "📚 OSF: Data Dictionaries" }
             },
             {
                 q: "What is data archiving vs. data backup?",
-                options: ["Archiving is long-term preservation; backup is short-term recovery", "They are exactly the same thing", "Archiving deletes old data; backup keeps it", "Backup is for important data; archiving is for unimportant"],
-                correct: 0,
-                explanation: "Backups protect against data loss; archives preserve data for long-term access and compliance."
+                options: ["They are exactly the same thing technically", "Archiving deletes old data while backup preserves it", "Backup is for important data; archiving is for unimportant data", "Archiving is long-term preservation; backup is short-term recovery"],
+                correct: 3,
+                explanation: "Backups protect against data loss; archives preserve data for long-term access and compliance.",
+                learnMore: { url: "https://www.dcc.ac.uk/guidance/how-guides/appraise-and-select/", text: "📚 DCC: Data Archiving" }
             },
             {
                 q: "What license is commonly used for open research data?",
-                options: ["Creative Commons (CC-BY or CC0)", "Proprietary software licenses", "No license needed for data", "The same license as the paper"],
-                correct: 0,
-                explanation: "CC-BY (attribution required) or CC0 (public domain) are common for open data sharing."
+                options: ["Standard proprietary software licenses", "No license is ever needed for data", "The exact same license used for papers", "Creative Commons licenses like CC-BY or CC0"],
+                correct: 3,
+                explanation: "CC-BY (attribution required) or CC0 (public domain) are common for open data sharing.",
+                learnMore: { url: "https://creativecommons.org/share-your-work/", text: "📚 Creative Commons" }
             }
         ]
     },
@@ -425,67 +485,77 @@ const questions = {
         1: [
             {
                 q: "What is open access publishing?",
-                options: ["Research freely available to read without subscription", "Publishing in any journal", "Sharing papers only with collaborators", "Papers available after a 10-year embargo"],
-                correct: 0,
-                explanation: "Open access makes research immediately and freely available to anyone online."
+                options: ["Publishing your paper in any journal available", "Sharing papers exclusively with direct collaborators", "Papers available to read after a 10-year embargo period", "Research freely available to read without subscription fees"],
+                correct: 3,
+                explanation: "Open access makes research immediately and freely available to anyone online.",
+                learnMore: { url: "https://www.openaccess.nl/en/what-is-open-access", text: "📚 What is Open Access" }
             },
             {
                 q: "What is a preprint?",
-                options: ["A paper shared publicly before peer review", "The first printed copy of a journal", "A paper that was rejected", "A very short paper"],
-                correct: 0,
-                explanation: "Preprints are manuscript versions shared on servers like arXiv before formal peer review."
+                options: ["The first physical printed copy of a journal issue", "A paper that has been rejected by reviewers", "A very short summary paper or abstract", "A paper shared publicly before formal peer review"],
+                correct: 3,
+                explanation: "Preprints are manuscript versions shared on servers like arXiv before formal peer review.",
+                learnMore: { url: "https://arxiv.org/", text: "📚 arXiv Preprint Server" }
             },
             {
                 q: "What does 'reproducibility' mean in research?",
-                options: ["Others can obtain the same results using your methods and data", "Publishing the same paper multiple times", "Copying other researchers' work", "Using the same equipment as others"],
-                correct: 0,
-                explanation: "Reproducibility means independent researchers can verify findings using the original data and methods."
+                options: ["Publishing the exact same paper multiple times", "Copying the work of other researchers directly", "Using the same laboratory equipment as others", "Others can obtain the same results using your methods and data"],
+                correct: 3,
+                explanation: "Reproducibility means independent researchers can verify findings using the original data and methods.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-00067-3", text: "📚 Nature: Reproducibility" }
             }
         ],
         2: [
             {
                 q: "What is the difference between 'Gold' and 'Green' open access?",
-                options: ["Gold: published OA by journal; Green: self-archived version", "Gold costs more; Green is free", "Gold is better quality; Green is lower quality", "Gold is for science; Green is for humanities"],
-                correct: 0,
-                explanation: "Gold OA is published openly by the journal (often with APC); Green OA is author self-archiving."
+                options: ["Gold is higher quality while Green is lower quality", "Gold is for sciences only while Green is for humanities", "Gold costs more money while Green is always free", "Gold is published OA by journal; Green is self-archived by author"],
+                correct: 3,
+                explanation: "Gold OA is published openly by the journal (often with APC); Green OA is author self-archiving.",
+                learnMore: { url: "https://www.sherpa.ac.uk/romeo/", text: "📚 SHERPA/RoMEO" }
             },
             {
                 q: "What is an Article Processing Charge (APC)?",
-                options: ["Fee authors pay for open access publication", "Subscription fee for readers", "Cost of printing physical copies", "Peer reviewer compensation"],
-                correct: 0,
-                explanation: "APCs are fees charged by some open access journals to cover publication costs."
+                options: ["A subscription fee that readers must pay", "The cost of printing physical journal copies", "Compensation paid to peer reviewers", "A fee authors pay for open access publication"],
+                correct: 3,
+                explanation: "APCs are fees charged by some open access journals to cover publication costs.",
+                learnMore: { url: "https://doaj.org/", text: "📚 DOAJ: OA Journals" }
             },
             {
                 q: "What is arXiv?",
-                options: ["A preprint server for physics, math, CS, and related fields", "A journal publishing company", "A plagiarism detection tool", "A reference management software"],
-                correct: 0,
-                explanation: "arXiv is a major preprint repository where researchers share papers before formal publication."
+                options: ["A commercial journal publishing company", "A plagiarism detection software tool", "A reference management application", "A preprint server for physics, math, CS, and related fields"],
+                correct: 3,
+                explanation: "arXiv is a major preprint repository where researchers share papers before formal publication.",
+                learnMore: { url: "https://arxiv.org/about", text: "📚 About arXiv" }
             }
         ],
         3: [
             {
                 q: "What is Plan S?",
-                options: ["European initiative requiring immediate open access for funded research", "A strategic plan for university rankings", "Software for managing research projects", "A data storage standard"],
-                correct: 0,
-                explanation: "Plan S (2021) requires research funded by participating agencies to be immediately open access."
+                options: ["A strategic plan for improving university rankings", "Project management software for research teams", "A standardized format for storing research data", "European initiative requiring immediate open access for funded research"],
+                correct: 3,
+                explanation: "Plan S (2021) requires research funded by participating agencies to be immediately open access.",
+                learnMore: { url: "https://www.coalition-s.org/", text: "📚 Coalition S: Plan S" }
             },
             {
                 q: "What are FAIR principles applied to software?",
-                options: ["Making research software findable, accessible, interoperable, reusable", "Using only commercial software", "Writing software in any language", "Software that runs fairly on all computers"],
-                correct: 0,
-                explanation: "FAIR4RS extends FAIR principles to research software, promoting sustainable software practices."
+                options: ["Using only commercial software for research", "Writing research software in any programming language", "Ensuring software runs fairly on all different computers", "Making research software findable, accessible, interoperable, and reusable"],
+                correct: 3,
+                explanation: "FAIR4RS extends FAIR principles to research software, promoting sustainable software practices.",
+                learnMore: { url: "https://www.rd-alliance.org/groups/fair-research-software-fair4rs-wg", text: "📚 RDA: FAIR4RS" }
             },
             {
                 q: "What is a 'transformative agreement' in publishing?",
-                options: ["Contract transitioning journal subscriptions to open access", "Agreement to transform research methods", "Contract between co-authors", "Software licensing agreement"],
-                correct: 0,
-                explanation: "Transformative agreements shift publisher revenue from subscriptions to open access publishing."
+                options: ["An agreement to fundamentally transform research methods", "A collaborative contract signed between co-authors", "A standard software licensing agreement for tools", "A contract transitioning journal subscriptions to open access"],
+                correct: 3,
+                explanation: "Transformative agreements shift publisher revenue from subscriptions to open access publishing.",
+                learnMore: { url: "https://esac-initiative.org/about/transformative-agreements/", text: "📚 ESAC: Transformative Agreements" }
             },
             {
                 q: "What is the purpose of ORCID?",
-                options: ["Provide unique persistent identifier for researchers", "Rate the quality of research", "Detect plagiarism in papers", "Fund open access publications"],
-                correct: 0,
-                explanation: "ORCID iDs uniquely identify researchers, linking them to their works across platforms."
+                options: ["To objectively rate the quality of research papers", "To detect plagiarism in submitted manuscripts", "To fund open access publications for researchers", "To provide a unique persistent identifier for researchers"],
+                correct: 3,
+                explanation: "ORCID iDs uniquely identify researchers, linking them to their works across platforms.",
+                learnMore: { url: "https://orcid.org/", text: "📚 ORCID" }
             }
         ]
     },
@@ -494,67 +564,77 @@ const questions = {
         1: [
             {
                 q: "What is the primary purpose of attending academic conferences?",
-                options: ["Share research and build professional connections", "Take a vacation from work", "Collect free merchandise", "Fulfill travel requirements"],
-                correct: 0,
-                explanation: "Conferences are key venues for presenting work, getting feedback, and meeting potential collaborators."
+                options: ["To take a vacation from regular work", "To collect free merchandise and swag", "To fulfill institutional travel requirements", "To share research and build professional connections"],
+                correct: 3,
+                explanation: "Conferences are key venues for presenting work, getting feedback, and meeting potential collaborators.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01631-7", text: "📚 Nature: Conference Networking" }
             },
             {
                 q: "What is a 'poster session' at a conference?",
-                options: ["Presenting research on a visual display with informal discussion", "Selling conference merchandise", "A session about graphic design", "A formal lecture with slides"],
-                correct: 0,
-                explanation: "Poster sessions allow researchers to present work visually and discuss it with interested attendees."
+                options: ["A session about graphic design and visuals", "Selling conference merchandise and materials", "A formal lecture presentation with slides", "Presenting research on a visual display with informal discussion"],
+                correct: 3,
+                explanation: "Poster sessions allow researchers to present work visually and discuss it with interested attendees.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01617-5", text: "📚 Nature: Poster Presentations" }
             },
             {
                 q: "Why is academic networking important?",
-                options: ["Leads to collaborations, job opportunities, and knowledge exchange", "It's only important for senior professors", "To increase social media followers", "Networking is not important in academia"],
-                correct: 0,
-                explanation: "Networks provide collaboration opportunities, career advancement, and access to resources and ideas."
+                options: ["It's only relevant for senior professors", "Primarily to increase social media followers", "Networking is not particularly important in academia", "It leads to collaborations, job opportunities, and knowledge exchange"],
+                correct: 3,
+                explanation: "Networks provide collaboration opportunities, career advancement, and access to resources and ideas.",
+                learnMore: { url: "https://www.science.org/content/article/getting-most-out-networking", text: "📚 Science: Networking Tips" }
             }
         ],
         2: [
             {
                 q: "What is a good way to follow up after meeting someone at a conference?",
-                options: ["Send a brief email mentioning your conversation and shared interests", "Add them on all social media immediately", "Wait for them to contact you first", "Send your full CV unsolicited"],
-                correct: 0,
-                explanation: "A timely, personalized follow-up email helps maintain the connection and explore collaboration."
+                options: ["Add them on all social media platforms immediately", "Wait patiently for them to contact you first", "Send your complete CV without any context", "Send a brief email mentioning your conversation and shared interests"],
+                correct: 3,
+                explanation: "A timely, personalized follow-up email helps maintain the connection and explore collaboration.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01631-7", text: "📚 Nature: Following Up" }
             },
             {
                 q: "What is an academic 'seminar series'?",
-                options: ["Regular talks by invited speakers at an institution", "A course for students only", "A series of published papers", "Online video tutorials"],
-                correct: 0,
-                explanation: "Seminar series invite researchers to present their work, fostering exchange and potential collaboration."
+                options: ["A formal course designed for students only", "A series of papers published together", "A collection of online video tutorials", "Regular talks by invited speakers at an institution"],
+                correct: 3,
+                explanation: "Seminar series invite researchers to present their work, fostering exchange and potential collaboration.",
+                learnMore: { url: "https://academia.stackexchange.com/questions/tagged/seminars", text: "📚 Academia SE: Seminars" }
             },
             {
                 q: "How can you increase your research visibility online?",
-                options: ["Maintain updated profiles on Google Scholar, ORCID, and ResearchGate", "Only publish in print journals", "Avoid sharing preprints", "Delete your online presence"],
-                correct: 0,
-                explanation: "Online profiles, preprints, and social media help researchers discover and engage with your work."
+                options: ["Only publish in traditional print journals", "Avoid sharing preprints before peer review", "Delete or minimize your online presence", "Maintain updated profiles on Google Scholar, ORCID, and ResearchGate"],
+                correct: 3,
+                explanation: "Online profiles, preprints, and social media help researchers discover and engage with your work.",
+                learnMore: { url: "https://scholar.google.com/", text: "📚 Google Scholar" }
             }
         ],
         3: [
             {
                 q: "What is a 'research visit' or 'sabbatical'?",
-                options: ["Extended stay at another institution for collaboration", "A vacation from research", "Visiting your own lab on weekends", "A virtual meeting with collaborators"],
-                correct: 0,
-                explanation: "Research visits allow intensive collaboration and exposure to different research environments."
+                options: ["A vacation break from research activities", "Visiting your own lab building on weekends", "A virtual video meeting with collaborators", "An extended stay at another institution for collaboration"],
+                correct: 3,
+                explanation: "Research visits allow intensive collaboration and exposure to different research environments.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-00871-x", text: "📚 Nature: Sabbaticals" }
             },
             {
                 q: "What is the purpose of academic social media like Twitter/X for researchers?",
-                options: ["Share findings, discuss research, and connect with peers", "Only for personal entertainment", "Required by all universities", "To replace peer review"],
-                correct: 0,
-                explanation: "Academic social media can amplify research impact and facilitate connections across fields."
+                options: ["Only meant for personal entertainment", "A requirement mandated by all universities", "Intended to replace traditional peer review", "To share findings, discuss research, and connect with peers"],
+                correct: 3,
+                explanation: "Academic social media can amplify research impact and facilitate connections across fields.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-03535-w", text: "📚 Nature: Social Media for Scientists" }
             },
             {
                 q: "What is a research consortium?",
-                options: ["Formal collaboration between multiple institutions on shared goals", "A single researcher's lab group", "A journal publishing group", "A student organization"],
-                correct: 0,
-                explanation: "Consortia coordinate multi-institution efforts, often for large grants or infrastructure projects."
+                options: ["A single researcher's laboratory group", "A journal publishing company or group", "A student organization at universities", "A formal collaboration between multiple institutions on shared goals"],
+                correct: 3,
+                explanation: "Consortia coordinate multi-institution efforts, often for large grants or infrastructure projects.",
+                learnMore: { url: "https://ec.europa.eu/research/participants/docs/h2020-funding-guide/grants/applying-for-funding/find-partners_en.htm", text: "📚 EU: Research Consortia" }
             },
             {
                 q: "What is the 'two-body problem' in academic careers?",
-                options: ["Difficulty finding positions for both partners in academic couples", "A physics research problem", "Managing two research projects", "Having two thesis advisors"],
-                correct: 0,
-                explanation: "The two-body problem refers to the challenge of academic couples finding positions at the same location."
+                options: ["A famous physics research problem to solve", "The challenge of managing two research projects", "The complexity of having two thesis advisors", "The difficulty of finding positions for both partners in academic couples"],
+                correct: 3,
+                explanation: "The two-body problem refers to the challenge of academic couples finding positions at the same location.",
+                learnMore: { url: "https://www.science.org/careers/two-body-problem", text: "📚 Science: Two-Body Problem" }
             }
         ]
     },
@@ -563,67 +643,77 @@ const questions = {
         1: [
             {
                 q: "What are the main competing demands on an academic's time?",
-                options: ["Research, teaching, administration, and service", "Only research matters", "Teaching is the only priority", "Administration consumes all time"],
-                correct: 0,
-                explanation: "Academics balance research, teaching, administrative duties, and service to the community."
+                options: ["Only research activities matter in academia", "Teaching is the sole priority for academics", "Administration and meetings consume everything", "Research, teaching, administration, and service all compete"],
+                correct: 3,
+                explanation: "Academics balance research, teaching, administrative duties, and service to the community.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01640-6", text: "📚 Nature: Managing Academic Time" }
             },
             {
                 q: "What is 'protected research time'?",
-                options: ["Dedicated time blocked for research activities only", "Time when research is forbidden", "Patented research methods", "Time for protecting research data"],
-                correct: 0,
-                explanation: "Protected time ensures researchers have uninterrupted periods for focused research work."
+                options: ["Time when all research activities are forbidden", "Patented or protected research methodology", "Time specifically for protecting your data", "Dedicated time blocked exclusively for research activities"],
+                correct: 3,
+                explanation: "Protected time ensures researchers have uninterrupted periods for focused research work.",
+                learnMore: { url: "https://www.facultyfocus.com/articles/academic-leadership/protecting-research-time/", text: "📚 Faculty Focus: Research Time" }
             },
             {
                 q: "What is a realistic approach to managing email as an academic?",
-                options: ["Check at set times rather than constantly", "Respond to every email immediately", "Ignore all emails", "Only use email once per week"],
-                correct: 0,
-                explanation: "Batching email into designated times prevents constant interruption of deep work."
+                options: ["Respond immediately to every single email", "Ignore all emails entirely if possible", "Only check and respond once per week", "Check email at scheduled set times rather than constantly"],
+                correct: 3,
+                explanation: "Batching email into designated times prevents constant interruption of deep work.",
+                learnMore: { url: "https://www.calnewport.com/", text: "📚 Cal Newport: Deep Work" }
             }
         ],
         2: [
             {
                 q: "What is the Pomodoro Technique?",
-                options: ["Working in focused 25-minute intervals with short breaks", "A method for growing tomatoes", "A peer review technique", "A grant writing strategy"],
-                correct: 0,
-                explanation: "Pomodoro uses timed work sessions (typically 25 min) with breaks to maintain focus and prevent burnout."
+                options: ["A specialized method for growing tomatoes", "A technique for reviewing research papers", "A strategy specifically for writing grants", "Working in focused 25-minute intervals with short breaks"],
+                correct: 3,
+                explanation: "Pomodoro uses timed work sessions (typically 25 min) with breaks to maintain focus and prevent burnout.",
+                learnMore: { url: "https://francescocirillo.com/products/the-pomodoro-technique", text: "📚 Pomodoro Technique" }
             },
             {
                 q: "How should academics handle saying 'no' to requests?",
-                options: ["Prioritize strategically and decline when necessary", "Accept everything to build reputation", "Never say no to senior colleagues", "Always say no to save time"],
-                correct: 0,
-                explanation: "Strategic declining protects time for priorities; it's essential for sustainable productivity."
+                options: ["Accept everything offered to build your reputation", "Never decline requests from senior colleagues", "Always decline requests to maximize your time", "Prioritize strategically and decline when necessary"],
+                correct: 3,
+                explanation: "Strategic declining protects time for priorities; it's essential for sustainable productivity.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01486-2", text: "📚 Nature: Saying No" }
             },
             {
                 q: "What is 'deep work' in academic context?",
-                options: ["Focused, uninterrupted time on cognitively demanding tasks", "Working late at night", "Research in deep sea environments", "Underground laboratory work"],
-                correct: 0,
-                explanation: "Deep work (Cal Newport) refers to concentrated effort on complex tasks like writing or analysis."
+                options: ["Working late hours at night in the lab", "Research conducted in deep sea environments", "Working in underground laboratory facilities", "Focused, uninterrupted time on cognitively demanding tasks"],
+                correct: 3,
+                explanation: "Deep work (Cal Newport) refers to concentrated effort on complex tasks like writing or analysis.",
+                learnMore: { url: "https://www.calnewport.com/books/deep-work/", text: "📚 Deep Work Book" }
             }
         ],
         3: [
             {
                 q: "What is academic 'service creep'?",
-                options: ["Gradual increase in committee and administrative duties", "A type of research misconduct", "Slow peer review processes", "Declining research productivity"],
-                correct: 0,
-                explanation: "Service creep occurs when administrative duties gradually consume time meant for research and teaching."
+                options: ["A recognized type of research misconduct", "The phenomenon of slow peer review processes", "Generally declining research productivity over time", "The gradual increase in committee and administrative duties"],
+                correct: 3,
+                explanation: "Service creep occurs when administrative duties gradually consume time meant for research and teaching.",
+                learnMore: { url: "https://www.insidehighered.com/advice/2019/04/08/how-handle-ever-increasing-service-demands-opinion", text: "📚 IHE: Service Creep" }
             },
             {
                 q: "What is the Eisenhower Matrix for prioritization?",
-                options: ["Categorizing tasks by urgency and importance", "A mathematical research method", "A funding allocation system", "A teaching evaluation matrix"],
-                correct: 0,
-                explanation: "The matrix sorts tasks into urgent/important quadrants to help prioritize effectively."
+                options: ["A mathematical method for solving research problems", "A system for allocating research funding fairly", "A framework for evaluating teaching effectiveness", "A method for categorizing tasks by urgency and importance"],
+                correct: 3,
+                explanation: "The matrix sorts tasks into urgent/important quadrants to help prioritize effectively.",
+                learnMore: { url: "https://www.eisenhower.me/eisenhower-matrix/", text: "📚 Eisenhower Matrix" }
             },
             {
                 q: "How can academics manage the pressure to publish?",
-                options: ["Focus on quality over quantity and set realistic goals", "Publish as many papers as possible regardless of quality", "Avoid publishing until retirement", "Only submit to top journals"],
-                correct: 0,
-                explanation: "Sustainable publishing involves strategic choices, realistic timelines, and quality-focused goals."
+                options: ["Publish as many papers as possible regardless of quality", "Avoid publishing anything until you retire", "Only ever submit papers to top-tier journals", "Focus on quality over quantity and set realistic goals"],
+                correct: 3,
+                explanation: "Sustainable publishing involves strategic choices, realistic timelines, and quality-focused goals.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-018-06185-8", text: "📚 Nature: Slow Science" }
             },
             {
                 q: "What is 'task batching' in productivity?",
-                options: ["Grouping similar tasks together to reduce context switching", "Doing many tasks simultaneously", "Delegating all tasks to others", "Postponing tasks indefinitely"],
-                correct: 0,
-                explanation: "Batching (e.g., all emails at once, all grading together) reduces mental overhead from switching."
+                options: ["Doing many different tasks all at once simultaneously", "Delegating all of your tasks to other people", "Postponing all tasks indefinitely to reduce stress", "Grouping similar tasks together to reduce context switching"],
+                correct: 3,
+                explanation: "Batching (e.g., all emails at once, all grading together) reduces mental overhead from switching.",
+                learnMore: { url: "https://todoist.com/productivity-methods/time-blocking", text: "📚 Todoist: Time Blocking" }
             }
         ]
     },
@@ -632,67 +722,77 @@ const questions = {
         1: [
             {
                 q: "What is the primary goal of academic mentoring?",
-                options: ["Support mentee's professional and personal development", "Get free labor for your research", "Increase your publication count", "Meet institutional requirements only"],
-                correct: 0,
-                explanation: "Effective mentoring focuses on the mentee's growth, career development, and well-being."
+                options: ["To get free labor for your research projects", "To increase your own publication count", "To meet basic institutional requirements only", "To support the mentee's professional and personal development"],
+                correct: 3,
+                explanation: "Effective mentoring focuses on the mentee's growth, career development, and well-being.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01041-9", text: "📚 Nature: Mentoring" }
             },
             {
                 q: "What is the difference between a supervisor and a mentor?",
-                options: ["Supervisors oversee work; mentors guide broader career development", "They are exactly the same role", "Mentors are always more senior", "Supervisors are informal; mentors are formal"],
-                correct: 0,
-                explanation: "Supervision focuses on specific project oversight; mentoring addresses broader career guidance and support."
+                options: ["They are exactly the same role in practice", "Mentors are always significantly more senior", "Supervisors are informal while mentors are formal", "Supervisors oversee specific work; mentors guide broader career development"],
+                correct: 3,
+                explanation: "Supervision focuses on specific project oversight; mentoring addresses broader career guidance and support.",
+                learnMore: { url: "https://www.apa.org/education-career/grad/mentoring", text: "📚 APA: Mentoring vs Advising" }
             },
             {
                 q: "How often should mentor-mentee meetings typically occur?",
-                options: ["Regular schedule (weekly/biweekly) with flexibility for needs", "Only when problems arise", "Once per semester maximum", "Daily mandatory meetings"],
-                correct: 0,
-                explanation: "Regular meetings maintain progress and relationships, with frequency adapted to project stage and needs."
+                options: ["Only when specific problems arise", "Once per semester at maximum frequency", "Mandatory daily check-in meetings required", "Regular schedule (weekly/biweekly) with flexibility for needs"],
+                correct: 3,
+                explanation: "Regular meetings maintain progress and relationships, with frequency adapted to project stage and needs.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-02078-8", text: "📚 Nature: Meeting Frequency" }
             }
         ],
         2: [
             {
                 q: "What is 'co-authorship mentoring'?",
-                options: ["Teaching mentees the publication process through joint papers", "Putting your name on all mentee papers", "Writing papers for your mentees", "Only senior authors can publish"],
-                correct: 0,
-                explanation: "Collaborative authorship teaches research writing while ensuring appropriate credit for contributions."
+                options: ["Putting your name on all of your mentee's papers", "Writing complete papers on behalf of your mentees", "A policy where only senior authors can publish", "Teaching mentees the publication process through joint papers"],
+                correct: 3,
+                explanation: "Collaborative authorship teaches research writing while ensuring appropriate credit for contributions.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-018-06990-1", text: "📚 Nature: Authorship" }
             },
             {
                 q: "How should a mentor handle a struggling mentee?",
-                options: ["Identify issues early, provide support, and adjust expectations", "Ignore problems until they resolve themselves", "Immediately terminate the relationship", "Blame the mentee for all difficulties"],
-                correct: 0,
-                explanation: "Early intervention, open communication, and supportive problem-solving help mentees overcome challenges."
+                options: ["Ignore problems until they naturally resolve themselves", "Immediately terminate the mentoring relationship", "Blame the mentee entirely for all difficulties", "Identify issues early, provide support, and adjust expectations"],
+                correct: 3,
+                explanation: "Early intervention, open communication, and supportive problem-solving help mentees overcome challenges.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-00916-1", text: "📚 Nature: Supporting Struggles" }
             },
             {
                 q: "What is a 'mentoring agreement'?",
-                options: ["Document outlining expectations and responsibilities for both parties", "Legal contract for intellectual property", "Agreement to pay mentoring fees", "A binding publication commitment"],
-                correct: 0,
-                explanation: "Mentoring agreements clarify expectations about meetings, feedback, goals, and responsibilities."
+                options: ["A legal contract covering intellectual property rights", "An agreement to pay fees for mentoring services", "A binding commitment to publish specific papers", "A document outlining expectations and responsibilities for both parties"],
+                correct: 3,
+                explanation: "Mentoring agreements clarify expectations about meetings, feedback, goals, and responsibilities.",
+                learnMore: { url: "https://www.nap.edu/catalog/25568/the-science-of-effective-mentorship-in-stemm", text: "📚 NAP: Effective Mentorship" }
             }
         ],
         3: [
             {
                 q: "What is 'peer mentoring' in academia?",
-                options: ["Mentoring relationships between colleagues at similar career stages", "Only senior professors can mentor", "Mentoring through published papers", "A formal university program only"],
-                correct: 0,
-                explanation: "Peer mentoring provides mutual support among those facing similar career stage challenges."
+                options: ["Only senior full professors can serve as mentors", "Mentoring that occurs through published papers", "A formal university-run program exclusively", "Mentoring relationships between colleagues at similar career stages"],
+                correct: 3,
+                explanation: "Peer mentoring provides mutual support among those facing similar career stage challenges.",
+                learnMore: { url: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4902838/", text: "📚 NIH: Peer Mentoring" }
             },
             {
                 q: "What is 'mentoring up' or 'reverse mentoring'?",
-                options: ["Junior members mentoring seniors on new technologies or perspectives", "Mentees telling mentors what to do", "Only upward career movement", "Mentoring while standing up"],
-                correct: 0,
-                explanation: "Reverse mentoring recognizes that junior members can teach seniors about new tools, trends, or perspectives."
+                options: ["Mentees directly telling mentors what to do", "Career movement in an upward direction only", "Standing up while conducting mentoring sessions", "Junior members mentoring seniors on new technologies or perspectives"],
+                correct: 3,
+                explanation: "Reverse mentoring recognizes that junior members can teach seniors about new tools, trends, or perspectives.",
+                learnMore: { url: "https://hbr.org/2019/10/why-reverse-mentoring-works-and-how-to-do-it-right", text: "📚 HBR: Reverse Mentoring" }
             },
             {
                 q: "How should mentors handle giving critical feedback?",
-                options: ["Be specific, constructive, and focus on work not person", "Avoid all negative feedback", "Be harsh to build resilience", "Only give feedback when asked"],
-                correct: 0,
-                explanation: "Effective critical feedback is specific, actionable, and delivered constructively with care."
+                options: ["Avoid providing any negative feedback at all", "Be intentionally harsh to build mental resilience", "Only give feedback when explicitly asked for it", "Be specific, constructive, and focus on work rather than person"],
+                correct: 3,
+                explanation: "Effective critical feedback is specific, actionable, and delivered constructively with care.",
+                learnMore: { url: "https://www.nature.com/articles/d41586-019-01041-9", text: "📚 Nature: Giving Feedback" }
             },
             {
                 q: "What is a 'mentoring network' approach?",
-                options: ["Multiple mentors providing different types of guidance", "One mentor for everything", "A social network for mentors", "Online-only mentoring"],
-                correct: 0,
-                explanation: "Having multiple mentors for different needs (career, technical, personal) provides comprehensive support."
+                options: ["Having exactly one mentor for all your needs", "A social network platform designed for mentors", "Mentoring that only happens through online channels", "Having multiple mentors providing different types of guidance"],
+                correct: 3,
+                explanation: "Having multiple mentors for different needs (career, technical, personal) provides comprehensive support.",
+                learnMore: { url: "https://www.sciencemag.org/careers/2019/04/build-your-mentoring-network", text: "📚 Science: Mentoring Networks" }
             }
         ]
     },
@@ -705,67 +805,77 @@ const questions = {
         1: [
             {
                 q: "What is the Delta Center at University of Tartu?",
-                options: ["A building housing IT, mathematics, and statistics faculties", "A research center for climate change", "A sports facility", "A student dormitory"],
-                correct: 0,
-                explanation: "Delta Center opened in 2019, bringing together UT's Institute of Computer Science, Institute of Mathematics and Statistics, and related units."
+                options: ["A research center focused on climate change studies", "A building housing IT, mathematics, and statistics units", "A student dormitory near the main campus", "A sports and recreation facility complex"],
+                correct: 1,
+                explanation: "Delta Center opened in 2019, bringing together UT's Institute of Computer Science, Institute of Mathematics and Statistics, and related units.",
+                learnMore: { url: "https://delta.ut.ee/en/", text: "📚 UT Delta Center" }
             },
             {
                 q: "What is ICS at University of Tartu?",
-                options: ["Institute of Computer Science", "International Computer Society", "Information and Communication Services", "Internal Computing Systems"],
-                correct: 0,
-                explanation: "ICS (Institute of Computer Science) is UT's primary computer science research and teaching unit."
+                options: ["International Computer Society for researchers", "Information and Communication Services department", "Institute of Computer Science research unit", "Internal Computing Systems administration"],
+                correct: 2,
+                explanation: "ICS (Institute of Computer Science) is UT's primary computer science research and teaching unit.",
+                learnMore: { url: "https://cs.ut.ee/en", text: "📚 UT Institute of Computer Science" }
             },
             {
                 q: "Which faculty does the Institute of Computer Science belong to?",
-                options: ["Faculty of Science and Technology", "Faculty of Medicine", "Faculty of Social Sciences", "Faculty of Arts and Humanities"],
-                correct: 0,
-                explanation: "ICS is part of UT's Faculty of Science and Technology."
+                options: ["Faculty of Medicine and Health Sciences", "Faculty of Science and Technology", "Faculty of Social Sciences and Education", "Faculty of Arts and Humanities"],
+                correct: 1,
+                explanation: "ICS is part of UT's Faculty of Science and Technology.",
+                learnMore: { url: "https://ut.ee/en/faculty-science-and-technology", text: "📚 UT Faculty of Science and Technology" }
             }
         ],
         2: [
             {
                 q: "What is ETIS in the Estonian research system?",
-                options: ["Estonian Research Information System - national database of research activities", "Estonian Technology Innovation Society", "European Technology and Innovation Scheme", "Estonian Teaching and Instruction Service"],
-                correct: 0,
-                explanation: "ETIS tracks Estonian research output, projects, and researcher profiles for evaluation and reporting."
+                options: ["Estonian Technology Innovation Society for startups", "European Technology and Innovation Scheme funding", "Estonian Research Information System database", "Estonian Teaching and Instruction Service portal"],
+                correct: 2,
+                explanation: "ETIS tracks Estonian research output, projects, and researcher profiles for evaluation and reporting.",
+                learnMore: { url: "https://www.etis.ee/", text: "📚 ETIS Portal" }
             },
             {
                 q: "What are the main research groups at UT ICS?",
-                options: ["Software Engineering, AI/ML, Security, Data Science, Distributed Systems", "Only theoretical computer science", "Biology and chemistry labs", "Social science departments"],
-                correct: 0,
-                explanation: "UT ICS hosts research groups in SE, AI/ML, cryptography/security, data science/bioinformatics, and distributed systems."
+                options: ["Only theoretical computer science and algorithms", "Software Engineering, AI/ML, Security, Data Science, and Distributed Systems", "Biology, chemistry, and physics laboratories", "Social science and economics departments"],
+                correct: 1,
+                explanation: "UT ICS hosts research groups in SE, AI/ML, cryptography/security, data science/bioinformatics, and distributed systems.",
+                learnMore: { url: "https://cs.ut.ee/en/research", text: "📚 UT ICS Research Groups" }
             },
             {
                 q: "What is the role of a 'research professor' at UT?",
-                options: ["Senior researcher focused primarily on research rather than teaching", "A professor who researches teaching methods", "An honorary title only", "A visiting professor from abroad"],
-                correct: 0,
-                explanation: "Research professors at UT focus on research activities with reduced teaching obligations."
+                options: ["A professor who researches teaching and pedagogy methods", "An honorary title given to retired faculty members", "A visiting professor from an international institution abroad", "A senior researcher focused primarily on research activities"],
+                correct: 3,
+                explanation: "Research professors at UT focus on research activities with reduced teaching obligations.",
+                learnMore: { url: "https://ut.ee/en/academic-career", text: "📚 UT Academic Career" }
             }
         ],
         3: [
             {
                 q: "What is UT's governance structure for research?",
-                options: ["Rector → Vice Rector for Research → Deans → Institute Directors", "A single research committee makes all decisions", "Each professor decides independently", "The government directly controls all research"],
-                correct: 0,
-                explanation: "UT has a hierarchical structure with research strategy set at rector/vice rector level and implemented through faculties and institutes."
+                options: ["A single research committee makes all university decisions", "Each professor decides their research direction independently", "The government directly controls and approves all research", "Rector → Vice Rector for Research → Deans → Institute Directors"],
+                correct: 3,
+                explanation: "UT has a hierarchical structure with research strategy set at rector/vice rector level and implemented through faculties and institutes.",
+                learnMore: { url: "https://ut.ee/en/management-and-governance", text: "📚 UT Governance" }
             },
             {
                 q: "What is the Delta doctoral school?",
-                options: ["Doctoral training program for IT, math, and statistics PhDs", "An undergraduate program", "A business incubator", "A high school outreach program"],
-                correct: 0,
-                explanation: "The Delta doctoral school coordinates PhD training across Delta Center disciplines."
+                options: ["An undergraduate program for computer science students", "A business incubator for student entrepreneurs", "A doctoral training program for IT, math, and statistics PhDs", "A high school outreach and recruitment program"],
+                correct: 2,
+                explanation: "The Delta doctoral school coordinates PhD training across Delta Center disciplines.",
+                learnMore: { url: "https://delta.ut.ee/en/doctoral-school/", text: "📚 Delta Doctoral School" }
             },
             {
                 q: "What is HITSA/HARNO's role in Estonian education?",
-                options: ["National agency supporting education development and IT education", "A private tutoring company", "University of Tartu department", "A hardware manufacturer"],
-                correct: 0,
-                explanation: "HARNO (formerly HITSA) is Estonia's Education and Youth Board, supporting IT education and digital competencies."
+                options: ["A private company providing tutoring services", "A department within the University of Tartu", "A national agency supporting education and IT development", "A hardware manufacturer for educational institutions"],
+                correct: 2,
+                explanation: "HARNO (formerly HITSA) is Estonia's Education and Youth Board, supporting IT education and digital competencies.",
+                learnMore: { url: "https://harno.ee/en", text: "📚 HARNO" }
             },
             {
                 q: "What is UT's position in global CS rankings?",
-                options: ["Top 200-300 in CS globally, highest in Estonia", "Not ranked internationally", "Top 10 globally", "Only ranked in social sciences"],
-                correct: 0,
-                explanation: "UT consistently ranks in top 200-300 for CS globally and is Estonia's leading university for computer science."
+                options: ["Not ranked in any international university rankings", "Consistently ranked in the global top 10 for CS", "Top 200-300 in CS globally, highest ranked in Estonia", "Only ranked in social sciences, not in CS fields"],
+                correct: 2,
+                explanation: "UT consistently ranks in top 200-300 for CS globally and is Estonia's leading university for computer science.",
+                learnMore: { url: "https://ut.ee/en/rankings", text: "📚 UT Rankings" }
             }
         ]
     },
@@ -774,67 +884,77 @@ const questions = {
         1: [
             {
                 q: "What is ETAG?",
-                options: ["Estonian Research Council - main national research funder", "European Technology and Agriculture Group", "Estonian Teaching Assessment Guide", "Education and Training Advisory Group"],
-                correct: 0,
-                explanation: "ETAG (Eesti Teadusagentuur) is Estonia's primary public research funding agency."
+                options: ["European Technology and Agriculture Group funding body", "Estonian Research Council - the main national research funder", "Estonian Teaching Assessment Guide for educators", "Education and Training Advisory Group for policy"],
+                correct: 1,
+                explanation: "ETAG (Eesti Teadusagentuur) is Estonia's primary public research funding agency.",
+                learnMore: { url: "https://etag.ee/en/", text: "📚 Estonian Research Council" }
             },
             {
                 q: "What are Personal Research Grants (PRG) from ETAG?",
-                options: ["Grants for individual researchers or small teams (up to ~300k€)", "Loans for personal expenses", "Scholarships for PhD students only", "Grants only for professors"],
-                correct: 0,
-                explanation: "PRG funds research projects led by individual PIs, typically 3-5 years with budgets around 100-300k€."
+                options: ["Personal loans for researcher living expenses", "Scholarships exclusively for PhD students only", "Grants available only to full professors", "Grants for individual researchers or small teams up to ~300k€"],
+                correct: 3,
+                explanation: "PRG funds research projects led by individual PIs, typically 3-5 years with budgets around 100-300k€.",
+                learnMore: { url: "https://etag.ee/en/funding/research-funding/personal-research-funding/", text: "📚 ETAG Personal Research Grants" }
             },
             {
                 q: "What is the ETAG evaluation cycle?",
-                options: ["Annual calls with applications typically in autumn", "Continuous rolling applications", "Once every 5 years", "Monthly deadlines"],
-                correct: 0,
-                explanation: "ETAG typically has annual funding calls with autumn deadlines and decisions in spring."
+                options: ["Continuous rolling applications accepted year-round", "Major funding calls only once every 5 years", "Monthly application deadlines throughout the year", "Annual calls with applications typically submitted in autumn"],
+                correct: 3,
+                explanation: "ETAG typically has annual funding calls with autumn deadlines and decisions in spring.",
+                learnMore: { url: "https://etag.ee/en/funding/", text: "📚 ETAG Funding Calls" }
             }
         ],
         2: [
             {
                 q: "What are Team Grants from ETAG?",
-                options: ["Larger grants for research groups with 5+ members", "Grants for sports teams", "Small individual grants", "Grants only for international teams"],
-                correct: 0,
-                explanation: "Team Grants support larger research groups with bigger budgets and longer durations than PRG."
+                options: ["Grants for university sports and athletics teams", "Small grants for individual researchers only", "Larger grants for research groups with 5+ members", "Grants exclusively for international research teams"],
+                correct: 2,
+                explanation: "Team Grants support larger research groups with bigger budgets and longer durations than PRG.",
+                learnMore: { url: "https://etag.ee/en/funding/research-funding/team-grants/", text: "📚 ETAG Team Grants" }
             },
             {
-                q: "What is mobilitas pluss?",
-                options: ["ETAG program supporting researcher mobility and returning scientists", "A mobile phone plan", "Public transportation subsidy", "A physical fitness program"],
-                correct: 0,
-                explanation: "Mobilitas Pluss funds incoming researchers, returning Estonian scientists, and research mobility."
+                q: "What is Mobilitas Pluss?",
+                options: ["A mobile phone plan for university employees", "A public transportation subsidy for students", "An ETAG program supporting researcher mobility and returning scientists", "A physical fitness and wellness program"],
+                correct: 2,
+                explanation: "Mobilitas Pluss funds incoming researchers, returning Estonian scientists, and research mobility.",
+                learnMore: { url: "https://etag.ee/en/funding/mobility-funding/mobilitas-pluss/", text: "📚 Mobilitas Pluss" }
             },
             {
                 q: "How does the Estonian research evaluation system work?",
-                options: ["Regular evaluation of research institutions affecting baseline funding", "No evaluation exists", "Only international experts evaluate", "Self-assessment only"],
-                correct: 0,
-                explanation: "Estonia evaluates research institutions periodically, with results affecting institutional funding allocations."
+                options: ["No formal evaluation system currently exists", "Only international experts participate in evaluations", "Self-assessment by institutions without external review", "Regular evaluation of institutions affecting their baseline funding"],
+                correct: 3,
+                explanation: "Estonia evaluates research institutions periodically, with results affecting institutional funding allocations.",
+                learnMore: { url: "https://etag.ee/en/evaluation/", text: "📚 ETAG Evaluation" }
             }
         ],
         3: [
             {
                 q: "What is baseline funding (baasfinantseerimine) for Estonian research?",
-                options: ["Government funding to institutions based on research capacity", "Student tuition fees", "Industry sponsorship only", "EU structural funds"],
-                correct: 0,
-                explanation: "Baseline funding provides institutions with stable core research funding based on evaluation results."
+                options: ["Revenue from student tuition fees only", "Industry sponsorship and private donations", "EU structural funds for infrastructure projects", "Government funding to institutions based on research capacity"],
+                correct: 3,
+                explanation: "Baseline funding provides institutions with stable core research funding based on evaluation results.",
+                learnMore: { url: "https://www.hm.ee/en/research-and-development", text: "📚 Estonian Research Policy" }
             },
             {
                 q: "What are the Estonian Centres of Excellence?",
-                options: ["Flagship research consortia receiving major long-term funding", "Building maintenance centers", "Teaching excellence awards", "Administrative service centers"],
-                correct: 0,
-                explanation: "Centres of Excellence are competitive, long-term funded research consortia in strategic areas."
+                options: ["Building maintenance and facilities management centers", "Annual teaching excellence awards for educators", "Administrative service centers for universities", "Flagship research consortia receiving major long-term funding"],
+                correct: 3,
+                explanation: "Centres of Excellence are competitive, long-term funded research consortia in strategic areas.",
+                learnMore: { url: "https://etag.ee/en/centres-of-excellence/", text: "📚 Centres of Excellence" }
             },
             {
-                q: "What is RITA program?",
-                options: ["Strategic research program for governance and societal challenges", "A music education initiative", "Regional tourism development", "Railway infrastructure project"],
-                correct: 0,
-                explanation: "RITA funds applied research addressing Estonian societal and governance challenges."
+                q: "What is the RITA program?",
+                options: ["A music and arts education initiative", "A regional tourism development scheme", "A strategic research program for governance and societal challenges", "A railway and transportation infrastructure project"],
+                correct: 2,
+                explanation: "RITA funds applied research addressing Estonian societal and governance challenges.",
+                learnMore: { url: "https://etag.ee/en/funding/applied-research/rita/", text: "📚 RITA Program" }
             },
             {
                 q: "How do Estonian structural funds support research?",
-                options: ["EU cohesion policy funds for infrastructure and capacity building", "Direct grants to individual researchers", "Only for agriculture research", "Loans requiring repayment"],
-                correct: 0,
-                explanation: "Structural funds finance research infrastructure, equipment, and capacity development in Estonia."
+                options: ["Direct grants to individual researchers for salaries", "Funding exclusively for agriculture research", "Loans that require full repayment with interest", "EU cohesion policy funds for infrastructure and capacity building"],
+                correct: 3,
+                explanation: "Structural funds finance research infrastructure, equipment, and capacity development in Estonia.",
+                learnMore: { url: "https://www.struktuurifondid.ee/en", text: "📚 EU Structural Funds Estonia" }
             }
         ]
     },
@@ -843,67 +963,77 @@ const questions = {
         1: [
             {
                 q: "What is Horizon Europe?",
-                options: ["EU's main research and innovation funding program (2021-2027)", "A European space mission", "An educational exchange program", "A climate change initiative only"],
-                correct: 0,
-                explanation: "Horizon Europe is the EU's €95.5 billion framework program for research and innovation."
+                options: ["A European Space Agency satellite mission", "The EU's main research and innovation funding program (2021-2027)", "An educational student exchange program like Erasmus", "A climate change initiative focused only on environment"],
+                correct: 1,
+                explanation: "Horizon Europe is the EU's €95.5 billion framework program for research and innovation.",
+                learnMore: { url: "https://ec.europa.eu/info/horizon-europe_en", text: "📚 Horizon Europe" }
             },
             {
                 q: "What are the three pillars of Horizon Europe?",
-                options: ["Excellent Science, Global Challenges, Innovative Europe", "Research, Development, Commercialization", "Basic, Applied, Industrial", "Teaching, Research, Service"],
-                correct: 0,
-                explanation: "Horizon Europe is structured into three pillars covering fundamental research, societal challenges, and innovation."
+                options: ["Research, Development, and Commercialization phases", "Basic, Applied, and Industrial research types", "Excellent Science, Global Challenges, and Innovative Europe", "Teaching, Research, and Service activities"],
+                correct: 2,
+                explanation: "Horizon Europe is structured into three pillars covering fundamental research, societal challenges, and innovation.",
+                learnMore: { url: "https://ec.europa.eu/info/horizon-europe/pillar-i-excellent-science_en", text: "📚 Horizon Europe Pillars" }
             },
             {
                 q: "What is the ERC?",
-                options: ["European Research Council - funding frontier research", "European Regulation Committee", "Estonian Research Council", "Educational Resources Center"],
-                correct: 0,
-                explanation: "ERC funds excellent individual researchers for frontier research across all fields."
+                options: ["European Regulation Committee for research policy", "Estonian Research Council national funding agency", "European Research Council funding frontier research", "Educational Resources Center for teaching materials"],
+                correct: 2,
+                explanation: "ERC funds excellent individual researchers for frontier research across all fields.",
+                learnMore: { url: "https://erc.europa.eu/", text: "📚 European Research Council" }
             }
         ],
         2: [
             {
                 q: "What are the ERC grant types?",
-                options: ["Starting, Consolidator, Advanced, Synergy grants", "Small, Medium, Large grants", "Basic, Applied, Commercial grants", "Individual, Team, Institutional grants"],
-                correct: 0,
-                explanation: "ERC offers grants based on career stage: Starting (2-7 yrs post-PhD), Consolidator (7-12), Advanced (track record), Synergy (groups)."
+                options: ["Small, Medium, and Large project categories", "Basic, Applied, and Commercial research grants", "Starting, Consolidator, Advanced, and Synergy grants", "Individual, Team, and Institutional funding schemes"],
+                correct: 2,
+                explanation: "ERC offers grants based on career stage: Starting (2-7 yrs post-PhD), Consolidator (7-12), Advanced (track record), Synergy (groups).",
+                learnMore: { url: "https://erc.europa.eu/funding/funding-schemes", text: "📚 ERC Funding Schemes" }
             },
             {
                 q: "What is MSCA?",
-                options: ["Marie Skłodowska-Curie Actions - researcher mobility and training", "Mathematical Sciences Computing Association", "Multi-Site Collaborative Agreement", "Master of Science Course Approval"],
-                correct: 0,
-                explanation: "MSCA funds researcher mobility, doctoral networks, and staff exchanges across borders."
+                options: ["Mathematical Sciences Computing Association professional society", "Multi-Site Collaborative Agreement for partnerships", "Master of Science Course Approval certification", "Marie Skłodowska-Curie Actions for researcher mobility and training"],
+                correct: 3,
+                explanation: "MSCA funds researcher mobility, doctoral networks, and staff exchanges across borders.",
+                learnMore: { url: "https://marie-sklodowska-curie-actions.ec.europa.eu/", text: "📚 Marie Curie Actions" }
             },
             {
                 q: "What are Horizon Europe Clusters?",
-                options: ["Thematic areas under Pillar 2 addressing global challenges", "Computer server clusters", "Regional research networks", "Industry consortia"],
-                correct: 0,
-                explanation: "Six clusters address health, culture, security, digital, climate, and food challenges."
+                options: ["High-performance computer server clusters for research", "Regional networks connecting research institutions", "Thematic areas under Pillar 2 addressing global challenges", "Industry consortia for commercial partnerships"],
+                correct: 2,
+                explanation: "Six clusters address health, culture, security, digital, climate, and food challenges.",
+                learnMore: { url: "https://ec.europa.eu/info/horizon-europe/cluster-1-health_en", text: "📚 Horizon Europe Clusters" }
             }
         ],
         3: [
             {
                 q: "What is a Research and Innovation Action (RIA)?",
-                options: ["Collaborative project funded 100% by EU, focused on research", "A startup funding scheme", "Individual fellowship", "Infrastructure construction grant"],
-                correct: 0,
-                explanation: "RIAs are collaborative research projects with 100% EU funding for primarily research activities."
+                options: ["A startup and venture funding scheme", "A collaborative project funded 100% by EU focused on research", "An individual fellowship for researchers", "An infrastructure construction grant for buildings"],
+                correct: 1,
+                explanation: "RIAs are collaborative research projects with 100% EU funding for primarily research activities.",
+                learnMore: { url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/glossary", text: "📚 EU Funding Glossary" }
             },
             {
                 q: "What is an Innovation Action (IA)?",
-                options: ["Project closer to market, 70% EU funding, more demonstration", "Pure basic research grant", "Individual researcher grant", "Policy development action"],
-                correct: 0,
-                explanation: "IAs focus on innovation activities closer to market with 70% EU funding rate."
+                options: ["A pure basic research grant for early-stage science", "An individual researcher fellowship grant", "A policy development and advocacy action", "A project closer to market with 70% EU funding and demonstration focus"],
+                correct: 3,
+                explanation: "IAs focus on innovation activities closer to market with 70% EU funding rate.",
+                learnMore: { url: "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf", text: "📚 EU Action Types" }
             },
             {
                 q: "What is the EIC (European Innovation Council)?",
-                options: ["EU body funding breakthrough innovations and scale-ups", "European Internet Commission", "Estonian Innovation Center", "Environmental Impact Council"],
-                correct: 0,
-                explanation: "EIC supports high-risk, high-potential innovations through Pathfinder, Transition, and Accelerator programs."
+                options: ["European Internet Commission for digital regulation", "Estonian Innovation Center national agency", "EU body funding breakthrough innovations and scale-ups", "Environmental Impact Council for sustainability"],
+                correct: 2,
+                explanation: "EIC supports high-risk, high-potential innovations through Pathfinder, Transition, and Accelerator programs.",
+                learnMore: { url: "https://eic.ec.europa.eu/", text: "📚 European Innovation Council" }
             },
             {
                 q: "What is a Coordination and Support Action (CSA)?",
-                options: ["Project for networking, coordination, or policy support (no research)", "A research grant for coordinators", "Student exchange program", "Conference funding only"],
-                correct: 0,
-                explanation: "CSAs support coordination, networking, and policy activities rather than research itself."
+                options: ["A research grant specifically for project coordinators", "A student exchange and mobility program", "A project for networking, coordination, or policy support without research", "A conference and event funding scheme only"],
+                correct: 2,
+                explanation: "CSAs support coordination, networking, and policy activities rather than research itself.",
+                learnMore: { url: "https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/support/glossary", text: "📚 EU Action Types" }
             }
         ]
     },
@@ -912,67 +1042,77 @@ const questions = {
         1: [
             {
                 q: "What is Estonia known for in the tech industry?",
-                options: ["E-governance, digital identity, successful startups like Skype, Wise", "Heavy manufacturing", "Oil and gas industry", "Automotive production"],
-                correct: 0,
-                explanation: "Estonia is recognized for digital governance, cybersecurity, and successful tech startups."
+                options: ["Heavy manufacturing and industrial production", "Oil, gas, and natural resource extraction", "E-governance, digital identity, and startups like Skype and Wise", "Automotive production and vehicle manufacturing"],
+                correct: 2,
+                explanation: "Estonia is recognized for digital governance, cybersecurity, and successful tech startups.",
+                learnMore: { url: "https://e-estonia.com/", text: "📚 e-Estonia" }
             },
             {
                 q: "What is Tehnopol?",
-                options: ["Science and business park supporting tech companies in Tallinn", "A political party", "A telecommunications company", "A government ministry"],
-                correct: 0,
-                explanation: "Tehnopol is Estonia's largest science park, hosting startups and connecting them with research."
+                options: ["A political party in Estonian parliament", "A major telecommunications company", "A science and business park supporting tech companies in Tallinn", "A government ministry for technology"],
+                correct: 2,
+                explanation: "Tehnopol is Estonia's largest science park, hosting startups and connecting them with research.",
+                learnMore: { url: "https://www.tehnopol.ee/en/", text: "📚 Tehnopol" }
             },
             {
                 q: "What is the significance of Tartu for Estonian tech?",
-                options: ["University city with growing startup ecosystem and research links", "Industrial manufacturing center", "Only a tourist destination", "Government administrative center"],
-                correct: 0,
-                explanation: "Tartu's university research and startup ecosystem make it Estonia's second tech hub."
+                options: ["Industrial manufacturing center for heavy industry", "A university city with growing startup ecosystem and research links", "Primarily a tourist destination for visitors", "The main government administrative center"],
+                correct: 1,
+                explanation: "Tartu's university research and startup ecosystem make it Estonia's second tech hub.",
+                learnMore: { url: "https://tartu.ee/en/business", text: "📚 Tartu Business" }
             }
         ],
         2: [
             {
                 q: "What is Garage48?",
-                options: ["Estonian hackathon organization promoting entrepreneurship", "A car repair service", "A storage company", "A music venue"],
-                correct: 0,
-                explanation: "Garage48 organizes hackathons and startup events, part of Estonia's entrepreneurship ecosystem."
+                options: ["A car repair and mechanic service chain", "An Estonian hackathon organization promoting entrepreneurship", "A self-storage company for businesses", "A popular music and concert venue"],
+                correct: 1,
+                explanation: "Garage48 organizes hackathons and startup events, part of Estonia's entrepreneurship ecosystem.",
+                learnMore: { url: "https://garage48.org/", text: "📚 Garage48" }
             },
             {
                 q: "What industries commonly collaborate with UT ICS?",
-                options: ["Fintech, cybersecurity, e-governance, health tech, AI", "Only agriculture", "Mining and extraction", "Traditional manufacturing only"],
-                correct: 0,
-                explanation: "ICS collaborates with fintech, security, digital government, health, and AI companies."
+                options: ["Only agriculture and farming technology", "Mining, extraction, and natural resources", "Fintech, cybersecurity, e-governance, health tech, and AI", "Traditional manufacturing and industrial production only"],
+                correct: 2,
+                explanation: "ICS collaborates with fintech, security, digital government, health, and AI companies.",
+                learnMore: { url: "https://cs.ut.ee/en/cooperation", text: "📚 UT ICS Cooperation" }
             },
             {
                 q: "What is Cybernetica?",
-                options: ["Estonian research company specializing in e-governance and security", "A video game company", "A pharmaceutical company", "A social media platform"],
-                correct: 0,
-                explanation: "Cybernetica develops secure digital solutions and has close ties to UT research."
+                options: ["A video game development company", "An Estonian research company specializing in e-governance and security", "A pharmaceutical and biotech company", "A social media platform startup"],
+                correct: 1,
+                explanation: "Cybernetica develops secure digital solutions and has close ties to UT research.",
+                learnMore: { url: "https://cyber.ee/", text: "📚 Cybernetica" }
             }
         ],
         3: [
             {
                 q: "What is the Estonian e-Residency program?",
-                options: ["Digital identity for non-residents to run EU businesses", "Citizenship pathway", "Student visa program", "Real estate investment scheme"],
-                correct: 0,
-                explanation: "e-Residency enables global entrepreneurs to establish and manage EU businesses digitally."
+                options: ["A pathway to Estonian citizenship and permanent residence", "A student visa program for international students", "A digital identity for non-residents to run EU businesses", "A real estate investment and property scheme"],
+                correct: 2,
+                explanation: "e-Residency enables global entrepreneurs to establish and manage EU businesses digitally.",
+                learnMore: { url: "https://e-resident.gov.ee/", text: "📚 e-Residency" }
             },
             {
                 q: "What research-industry collaboration models work in Estonia?",
-                options: ["Contract research, joint labs, industrial PhDs, spin-offs", "Only informal consulting", "No formal collaboration exists", "Government-mandated partnerships only"],
-                correct: 0,
-                explanation: "Estonian academia-industry collaboration includes contracts, joint positions, shared infrastructure, and startups."
+                options: ["Only informal consulting arrangements without contracts", "No formal collaboration models currently exist", "Government-mandated partnerships required by law", "Contract research, joint labs, industrial PhDs, and spin-offs"],
+                correct: 3,
+                explanation: "Estonian academia-industry collaboration includes contracts, joint positions, shared infrastructure, and startups.",
+                learnMore: { url: "https://www.eas.ee/en/", text: "📚 Enterprise Estonia" }
             },
             {
                 q: "What is Startup Estonia?",
-                options: ["Government initiative supporting the startup ecosystem", "A specific startup company", "University student organization", "An investment fund"],
-                correct: 0,
-                explanation: "Startup Estonia coordinates government support for the startup ecosystem."
+                options: ["A specific startup company in the technology sector", "A university student organization for entrepreneurs", "A government initiative supporting the startup ecosystem", "A private investment fund for early-stage companies"],
+                correct: 2,
+                explanation: "Startup Estonia coordinates government support for the startup ecosystem.",
+                learnMore: { url: "https://startupestonia.ee/", text: "📚 Startup Estonia" }
             },
             {
                 q: "What role does Bolt play in the Estonian tech ecosystem?",
-                options: ["Major mobility/delivery startup showing Estonian startup success", "An electricity company", "A hardware manufacturer", "A research institute"],
-                correct: 0,
-                explanation: "Bolt is a prominent Estonian startup (mobility, delivery) demonstrating the country's tech entrepreneurship."
+                options: ["An electricity and power utility company", "A hardware manufacturing corporation", "A major mobility/delivery startup showing Estonian startup success", "A research institute for technology studies"],
+                correct: 2,
+                explanation: "Bolt is a prominent Estonian startup (mobility, delivery) demonstrating the country's tech entrepreneurship.",
+                learnMore: { url: "https://bolt.eu/", text: "📚 Bolt" }
             }
         ]
     },
@@ -981,67 +1121,77 @@ const questions = {
         1: [
             {
                 q: "What is intellectual property (IP) in academic research?",
-                options: ["Creations of mind that can be protected: inventions, works, designs", "Physical laboratory equipment", "Research data only", "Published papers only"],
-                correct: 0,
-                explanation: "IP includes patents, copyrights, trademarks, trade secrets, and designs arising from research."
+                options: ["Physical laboratory equipment and instruments", "Only the raw research data collected", "Creations of mind that can be protected: inventions, works, and designs", "Only formally published academic papers"],
+                correct: 2,
+                explanation: "IP includes patents, copyrights, trademarks, trade secrets, and designs arising from research.",
+                learnMore: { url: "https://www.wipo.int/about-ip/en/", text: "📚 WIPO: What is IP" }
             },
             {
                 q: "What is a patent?",
-                options: ["Exclusive right granted for an invention for limited time", "A type of publication", "A research grant", "A teaching certificate"],
-                correct: 0,
-                explanation: "Patents protect inventions, granting exclusive rights typically for 20 years in exchange for disclosure."
+                options: ["A type of academic publication or journal article", "An exclusive right granted for an invention for a limited time", "A research grant from a funding agency", "A teaching certificate or qualification"],
+                correct: 1,
+                explanation: "Patents protect inventions, granting exclusive rights typically for 20 years in exchange for disclosure.",
+                learnMore: { url: "https://www.epo.org/learning/patents.html", text: "📚 EPO: Patents" }
             },
             {
                 q: "What is a Technology Transfer Office (TTO)?",
-                options: ["University unit helping commercialize research results", "A government tax office", "A teaching department", "An IT support service"],
-                correct: 0,
-                explanation: "TTOs help researchers protect IP, license technologies, and create spin-off companies."
+                options: ["A government tax collection office", "A university unit helping commercialize research results", "A teaching and curriculum department", "An IT support and helpdesk service"],
+                correct: 1,
+                explanation: "TTOs help researchers protect IP, license technologies, and create spin-off companies.",
+                learnMore: { url: "https://ut.ee/en/technology-transfer", text: "📚 UT Technology Transfer" }
             }
         ],
         2: [
             {
                 q: "What is licensing in technology transfer?",
-                options: ["Granting rights to use IP in exchange for fees/royalties", "Publishing open source software", "Teaching a course", "Hiring new researchers"],
-                correct: 0,
-                explanation: "Licensing allows companies to use university IP while the university retains ownership."
+                options: ["Publishing research as open source software", "Granting rights to use IP in exchange for fees or royalties", "Teaching a university course or seminar", "Hiring new researchers for the laboratory"],
+                correct: 1,
+                explanation: "Licensing allows companies to use university IP while the university retains ownership.",
+                learnMore: { url: "https://www.wipo.int/licensing/en/", text: "📚 WIPO: Licensing" }
             },
             {
                 q: "What is a spin-off company?",
-                options: ["New company created to commercialize university research", "A company that closes down", "A subsidiary of a large corporation", "A student organization"],
-                correct: 0,
-                explanation: "Spin-offs commercialize research results, often with researchers as founders and university as shareholder."
+                options: ["A company that is shutting down operations", "A new company created to commercialize university research", "A subsidiary division of a large corporation", "A student organization for entrepreneurship"],
+                correct: 1,
+                explanation: "Spin-offs commercialize research results, often with researchers as founders and university as shareholder.",
+                learnMore: { url: "https://ut.ee/en/spin-off-companies", text: "📚 UT Spin-offs" }
             },
             {
                 q: "Who typically owns IP created at Estonian universities?",
-                options: ["The university, with inventor rights to share in revenues", "Always the individual researcher", "Always the government", "Always the funding agency"],
-                correct: 0,
-                explanation: "Estonian universities typically own employee-created IP, with inventors receiving revenue shares."
+                options: ["Always the individual researcher who created it", "Always the Estonian government automatically", "Always the funding agency that supported the research", "The university, with inventor rights to share in revenues"],
+                correct: 3,
+                explanation: "Estonian universities typically own employee-created IP, with inventors receiving revenue shares.",
+                learnMore: { url: "https://www.riigiteataja.ee/en/eli/520062017004/consolide", text: "📚 Estonian IP Law" }
             }
         ],
         3: [
             {
                 q: "What is 'freedom to operate' analysis?",
-                options: ["Assessment of whether your product infringes existing patents", "Permission to work anywhere", "Open source licensing", "Academic freedom policy"],
-                correct: 0,
-                explanation: "Freedom to operate analysis checks if commercializing research would infringe others' IP rights."
+                options: ["Permission to work at any institution or company", "Open source software licensing requirements", "An assessment of whether your product infringes existing patents", "Academic freedom policy for researchers"],
+                correct: 2,
+                explanation: "Freedom to operate analysis checks if commercializing research would infringe others' IP rights.",
+                learnMore: { url: "https://www.epo.org/learning/materials/freedom-to-operate.html", text: "📚 EPO: Freedom to Operate" }
             },
             {
                 q: "What is the difference between IP protection and open science?",
-                options: ["IP restricts use for commercial gain; open science maximizes access", "They are the same concept", "Open science means no IP protection ever", "IP only applies to industry"],
-                correct: 0,
-                explanation: "IP and open science represent different strategies; they can coexist with appropriate timing and planning."
+                options: ["They are exactly the same concept in practice", "Open science means no IP protection is ever allowed", "IP protection only applies to private industry", "IP restricts use for commercial gain; open science maximizes access"],
+                correct: 3,
+                explanation: "IP and open science represent different strategies; they can coexist with appropriate timing and planning.",
+                learnMore: { url: "https://www.openaire.eu/", text: "📚 OpenAIRE" }
             },
             {
                 q: "What is a non-disclosure agreement (NDA)?",
-                options: ["Contract protecting confidential information in collaborations", "Publishing agreement with journals", "Employment contract", "Grant application form"],
-                correct: 0,
-                explanation: "NDAs protect confidential information when discussing potential collaborations or commercialization."
+                options: ["A publishing agreement signed with academic journals", "A standard employment contract for researchers", "A contract protecting confidential information in collaborations", "A grant application form for funding"],
+                correct: 2,
+                explanation: "NDAs protect confidential information when discussing potential collaborations or commercialization.",
+                learnMore: { url: "https://www.wipo.int/sme/en/documents/disclosing_inf.htm", text: "📚 WIPO: Confidentiality" }
             },
             {
                 q: "When should researchers contact TTO about potential IP?",
-                options: ["Before any public disclosure (publication, presentation, discussion)", "After the paper is published", "Only when a company approaches", "Never, IP is automatic"],
-                correct: 0,
-                explanation: "Early TTO contact is crucial as public disclosure can prevent patent protection."
+                options: ["After the research paper has been published", "Only when a company approaches with interest", "Never, since IP protection is fully automatic", "Before any public disclosure such as publication or presentation"],
+                correct: 3,
+                explanation: "Early TTO contact is crucial as public disclosure can prevent patent protection.",
+                learnMore: { url: "https://ut.ee/en/technology-transfer", text: "📚 UT Technology Transfer" }
             }
         ]
     },
@@ -1050,67 +1200,77 @@ const questions = {
         1: [
             {
                 q: "What is research ethics committee approval needed for?",
-                options: ["Research involving human participants, sensitive data, or animals", "All research projects automatically", "Only medical research", "Only funded research"],
-                correct: 0,
-                explanation: "Ethics approval is required for research involving humans, personal data, animals, or sensitive topics."
+                options: ["All research projects require approval automatically", "Research involving human participants, sensitive data, or animals", "Only medical and clinical research studies", "Only externally funded research projects"],
+                correct: 1,
+                explanation: "Ethics approval is required for research involving humans, personal data, animals, or sensitive topics.",
+                learnMore: { url: "https://ut.ee/en/research-ethics", text: "📚 UT Research Ethics" }
             },
             {
                 q: "What is GDPR in research context?",
-                options: ["EU data protection regulation affecting research with personal data", "A grant funding program", "A publication format", "A laboratory safety standard"],
-                correct: 0,
-                explanation: "GDPR regulates how personal data is collected, processed, and stored in research."
+                options: ["A research grant funding program from the EU", "A standard publication format for journals", "EU data protection regulation affecting research with personal data", "A laboratory safety and equipment standard"],
+                correct: 2,
+                explanation: "GDPR regulates how personal data is collected, processed, and stored in research.",
+                learnMore: { url: "https://gdpr.eu/", text: "📚 GDPR.eu" }
             },
             {
                 q: "What is informed consent in research?",
-                options: ["Participant agreement after understanding research purpose and risks", "Journal acceptance of a paper", "Employer permission to do research", "Automatic consent through participation"],
-                correct: 0,
-                explanation: "Informed consent requires explaining the research and obtaining voluntary agreement to participate."
+                options: ["A journal's acceptance of a submitted paper", "Employer permission to conduct research activities", "Participant agreement after understanding research purpose and risks", "Automatic consent implied by participation"],
+                correct: 2,
+                explanation: "Informed consent requires explaining the research and obtaining voluntary agreement to participate.",
+                learnMore: { url: "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/informed-consent/index.html", text: "📚 OHRP: Informed Consent" }
             }
         ],
         2: [
             {
                 q: "What is a Data Protection Impact Assessment (DPIA)?",
-                options: ["Analysis of data processing risks required for high-risk activities", "Assessment of research impact factor", "Evaluation of data quality", "Database performance testing"],
-                correct: 0,
-                explanation: "DPIA is required when data processing poses high risks to individuals' rights and freedoms."
+                options: ["An assessment of a journal's research impact factor", "An evaluation of research data quality standards", "An analysis of data processing risks required for high-risk activities", "Performance testing for research databases"],
+                correct: 2,
+                explanation: "DPIA is required when data processing poses high risks to individuals' rights and freedoms.",
+                learnMore: { url: "https://gdpr.eu/data-protection-impact-assessment-template/", text: "📚 DPIA Template" }
             },
             {
                 q: "What are the principles of research data processing under GDPR?",
-                options: ["Purpose limitation, data minimization, accuracy, storage limitation", "Collect as much data as possible", "Keep data forever for future use", "No restrictions on data use"],
-                correct: 0,
-                explanation: "GDPR requires specific purpose, minimal necessary data, accuracy, and limited retention."
+                options: ["Collect as much data as possible for future use", "Keep all data indefinitely for potential research needs", "No restrictions apply to research data processing", "Purpose limitation, data minimization, accuracy, and storage limitation"],
+                correct: 3,
+                explanation: "GDPR requires specific purpose, minimal necessary data, accuracy, and limited retention.",
+                learnMore: { url: "https://gdpr.eu/article-5-how-to-process-personal-data/", text: "📚 GDPR Principles" }
             },
             {
                 q: "What is the role of a Data Protection Officer?",
-                options: ["Advises organization on data protection compliance", "Protects physical data storage", "Manages IT security systems", "Approves all research projects"],
-                correct: 0,
-                explanation: "DPOs advise on GDPR compliance and serve as contact point for data protection issues."
+                options: ["Protecting physical data storage and server rooms", "Managing IT security systems and firewalls", "Advising the organization on data protection compliance", "Approving all research project proposals"],
+                correct: 2,
+                explanation: "DPOs advise on GDPR compliance and serve as contact point for data protection issues.",
+                learnMore: { url: "https://gdpr.eu/data-protection-officer/", text: "📚 DPO Role" }
             }
         ],
         3: [
             {
                 q: "What are lawful bases for processing personal data in research?",
-                options: ["Consent, public interest, legitimate interest (varies by context)", "Any reason is acceptable", "Only consent is ever valid", "Research is automatically exempt"],
-                correct: 0,
-                explanation: "Research typically relies on consent or public interest, with specific conditions for each."
+                options: ["Any reason is acceptable for research purposes", "Only explicit consent is ever a valid basis", "Research activities are automatically exempt from requirements", "Consent, public interest, or legitimate interest depending on context"],
+                correct: 3,
+                explanation: "Research typically relies on consent or public interest, with specific conditions for each.",
+                learnMore: { url: "https://gdpr.eu/article-6-how-to-process-personal-data-legally/", text: "📚 Lawful Bases" }
             },
             {
                 q: "What is the research exemption under GDPR?",
-                options: ["Special provisions allowing certain flexibility for scientific research", "Complete exemption from all GDPR rules", "Only applies to medical research", "No such exemption exists"],
-                correct: 0,
-                explanation: "GDPR provides some flexibility for research but still requires appropriate safeguards."
+                options: ["Complete exemption from all GDPR rules and requirements", "Special provisions allowing certain flexibility for scientific research", "An exemption that only applies to medical and clinical research", "No such exemption exists under GDPR"],
+                correct: 1,
+                explanation: "GDPR provides some flexibility for research but still requires appropriate safeguards.",
+                learnMore: { url: "https://gdpr.eu/article-89-processing-for-archiving-purposes/", text: "📚 GDPR Research Exemptions" }
             },
             {
                 q: "What reporting is required for EU-funded projects?",
-                options: ["Periodic reports, financial statements, and deliverables on schedule", "Only a final report at project end", "No reporting required", "Only oral presentations"],
-                correct: 0,
-                explanation: "EU projects require regular reporting on progress, finances, and deliverables."
+                options: ["Only a final report at the very end of the project", "No reporting requirements exist for EU projects", "Periodic reports, financial statements, and deliverables on schedule", "Only oral presentations at review meetings"],
+                correct: 2,
+                explanation: "EU projects require regular reporting on progress, finances, and deliverables.",
+                learnMore: { url: "https://ec.europa.eu/info/funding-tenders/opportunities/docs/2021-2027/common/guidance/aga_en.pdf", text: "📚 EU Reporting Requirements" }
             },
             {
                 q: "What is research integrity in compliance context?",
-                options: ["Adherence to ethical principles: honesty, rigor, transparency, fairness", "Following only legal requirements", "Publishing frequently", "Securing large grants"],
-                correct: 0,
-                explanation: "Research integrity encompasses ethical conduct beyond mere legal compliance."
+                options: ["Following only the minimum legal requirements", "Publishing research papers as frequently as possible", "Securing large grants and significant funding", "Adherence to ethical principles: honesty, rigor, transparency, and fairness"],
+                correct: 3,
+                explanation: "Research integrity encompasses ethical conduct beyond mere legal compliance.",
+                learnMore: { url: "https://allea.org/code-of-conduct/", text: "📚 ALLEA Code of Conduct" }
             }
         ]
     },
@@ -3897,3 +4057,23 @@ const questions = {
         ]
     }
 };
+
+// Helper functions for question management
+
+function getQuestionsForSkill(skillId, level) {
+    if (!questions[skillId] || !questions[skillId][level]) {
+        return [];
+    }
+    return questions[skillId][level];
+}
+
+function getAvailableLevels(skillId) {
+    if (!questions[skillId]) {
+        return [];
+    }
+    return Object.keys(questions[skillId]).map(Number).sort((a, b) => a - b);
+}
+
+function hasQuestions(skillId) {
+    return questions[skillId] && Object.keys(questions[skillId]).length > 0;
+}
