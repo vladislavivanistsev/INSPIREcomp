@@ -1,6 +1,6 @@
-// ATI Quest - Question Bank
+// Learning Portal - Question Bank
 // Questions organized by skill ID and difficulty level (1-3)
-// For University of Tartu Institute of Computer Science
+// For University of Latvia
 
 const questions = {
     // ============================================================================
